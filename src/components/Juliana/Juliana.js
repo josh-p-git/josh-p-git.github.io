@@ -1,7 +1,13 @@
-export default function Juliana() {
+import './Juliana.css'
+
+export default function Juliana({ handleJuliana }) {
     return (
-        <div>
-            <h1>Ju test</h1>
+        <div className="juliana-backdrop">
+            <div className="juliana-title">
+                <h1>Juliana</h1>
+                <p>Please give ju a job</p>
+            </div>
+            <button onClick={handleJuliana} >Close</button>
         </div>
         )
 }
