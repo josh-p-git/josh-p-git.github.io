@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar img {
+    cursor: pointer;
+  }
+  
+  .navbar .our-projects {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar button {
+    margin-right: 10px;
+  }

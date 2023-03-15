@@ -2,12 +2,18 @@ import './Navbar.css'
 import React from 'react'
 // import PensanoDevs2 from '../images/PensanoDevs2.png'
 
-export default function Navbar({ handleOurProjects }) {
+export default function Navbar({ handleOurProjects, toggleComponents }) {
     return (
-        <div>
-            <img src="/PensanoDevs2.png" width="400" onClick={() => handleOurProjects(false)}/> 
+        <div className="navbar">
+            <img src="/PensanoDevs2.png" width="400" onClick={() => {
+                handleOurProjects(false)
+                toggleComponents(true)
+            }}/> 
             <div className="our-projects">
-                <button onClick={() => handleOurProjects(true)}>our projects</button>
+                <button onClick={() => {
+                    handleOurProjects(true)
+                    toggleComponents(false)
+                }}>our projects</button>
                 <a href='https://makers.tech' target="_blank">makers</a>
             </div>
         </div>
