@@ -8,7 +8,7 @@ export default function Navbar({ handleOurProjects }) {
             <img src="/PensanoDevs2.png" width="400" onClick={() => handleOurProjects(false)}/> 
             <div className="our-projects">
                 <button onClick={() => handleOurProjects(true)}>our projects</button>
-                <a href='makers.tech' target="_blank">makers</a>
+                <a href='https://makers.tech' target="_blank">makers</a>
             </div>
         </div>
         )
