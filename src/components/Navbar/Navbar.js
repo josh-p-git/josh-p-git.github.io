@@ -5,7 +5,7 @@ import React from 'react'
 export default function Navbar({ handleOurProjects, toggleComponents }) {
     return (
         <div className="navbar">
-            <img src="/PensanoDevs2.png" width="400" onClick={() => {
+            <img src="/logo-navbar.png" width="400" onClick={() => {
                 handleOurProjects(false)
                 toggleComponents(true)
             }}/> 

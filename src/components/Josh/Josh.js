@@ -1,13 +1,12 @@
 import './Josh.css'
 
-export default function Josh({ handleJosh }) {
+export default function Josh() {
     return (
-        <div className="josh-backdrop">
-            <div className="josh-title">
-                <h1>Josh</h1>
-                <p>Please give josh a job</p>
+        <div>
+            <div className='name'> Josh Penney</div>
+            <div className='about'>
+                <Image />
             </div>
-            <button onClick={handleJosh} >Close</button>
         </div>
         )
 }
