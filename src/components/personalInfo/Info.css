@@ -1,0 +1,11 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 9px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.link:visited {
+  color: inherit;
+}

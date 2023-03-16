@@ -1,6 +1,7 @@
 import './Josh.css';
 import ProfilePic from '../ProfilePic/ProfilePic'
 import josh from '../../images/Josh-no-colour.svg'
+import Info from '../personalInfo/Info';
 
 export default function Josh() {
     return (
@@ -9,7 +10,7 @@ export default function Josh() {
           <ProfilePic imageProp={josh} />
         </div>
         <div>
-          <div className='name'>Josh Penney</div>
+        <div className='name'>Josh Penney</div>
             <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -18,7 +19,13 @@ export default function Josh() {
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially
             </p>
-            <p>hello personal info</p>
+            <Info 
+              git={"https://github.com/josh-p-git"}
+              linkedin={"https://www.linkedin.com/in/jpenneynl/"}
+              location={"Southampton"}
+              phone={"072194321"}
+              email={"josh.penney@gmail.com"}
+              />
         </div>
       </div>
     );
