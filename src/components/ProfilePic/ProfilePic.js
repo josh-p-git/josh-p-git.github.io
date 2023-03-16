@@ -1,9 +1,10 @@
 import React from 'react';
+import './ProfilePic.css'
 
-export default function ProfilePic({ imageProp = 'default-image-url' }) {
+export default function ProfilePic({ imageProp }) {
   return (
     <div>
-      <img src={imageProp} alt="Profile Picture" />
+      <img className='pic' src={imageProp} alt="Profile Picture" />
     </div>
   );
 }

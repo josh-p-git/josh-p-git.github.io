@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Josh from "./components/Josh/Josh";
+import './App.css'
 // import Luiz from "./components/Luiz/Luiz";
 // import Juliana from "./components/Juliana/Juliana";
 // import Rachel from "./components/Rachel/Rachel";
@@ -8,11 +9,10 @@ import Josh from "./components/Josh/Josh";
 
 function App() {
   return (
-    <>
+    <div className='josh'>
     <Navbar />
       <Josh />
-    </>
-
+    </div>
   )
 }
 
