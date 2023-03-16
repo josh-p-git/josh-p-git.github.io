@@ -48,3 +48,20 @@
   flex: 1;
   margin-right: 20px;
 }
+
+.buttons {
+  background-color: #A6C7CB;
+  flex-direction: column;
+  font-size: 18px;
+  color: #16557B;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  border-color: #CBE1E8;
+  margin-top: 30px;
+  margin-left:150px;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}

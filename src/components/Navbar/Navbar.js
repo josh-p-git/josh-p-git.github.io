@@ -6,7 +6,7 @@ import logoNav from '../../images/logo-navbar.png'
 export default function Navbar({ handleOurProjects, toggleComponents }) {
     return (
         <div className="navbar">
-            <img src={logoNav} width="100" onClick={() => {
+            <img src={logoNav} width="200" onClick={() => {
                 handleOurProjects(false)
                 toggleComponents(true)
             }}/> 
@@ -14,8 +14,8 @@ export default function Navbar({ handleOurProjects, toggleComponents }) {
                 <button onClick={() => {
                     handleOurProjects(true)
                     toggleComponents(false)
-                }}>our projects</button>
-                <a href='https://makers.tech' target="_blank">makers</a>
+                }}>Our Projects</button>
+                <a href='https://makers.tech' target="_blank">Makers</a>
             </div>
         </div>
         )

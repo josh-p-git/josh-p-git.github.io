@@ -3,7 +3,7 @@ import ProfilePic from '../ProfilePic/ProfilePic'
 import josh from '../../images/Josh.svg'
 import Info from '../personalInfo/Info';
 
-export default function Josh() {
+export default function Josh({ handlePortfolio, handleCV, toggleComponents }) {
   return (
 
     <div className='pageContainer'>
@@ -31,7 +31,20 @@ export default function Josh() {
               email={"josh.penney@gmail.com"}
               />
             </div>
-      </div>
+          </div>
+    
+          <div>
+            <button className='buttons' onClick={() => {
+                handlePortfolio(true)
+                toggleComponents(false)
+            }}>My Portfolio</button>
+            
+            <button className='buttons' onClick={() => {
+                handleCV(true)
+                toggleComponents(false)
+            }}>My CV</button>
+          </div>
+
     </div>
   );
 }

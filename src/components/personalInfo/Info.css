@@ -1,14 +1,14 @@
 .info {
-  display: flex;
   padding: 20px;
   justify-content: space-between;
-  /*  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-inline: 30px; */
+  align-items: center;
+  margin-top: 40px;
+  margin-right: 30px;
   color: #16557B;
+  /* below: to give space between items */
+  margin-inline-start: -20%;
 }
 
 .link:visited {
-  color: black;
+  color: #16557B;
 }
