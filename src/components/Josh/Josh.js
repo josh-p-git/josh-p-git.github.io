@@ -3,7 +3,7 @@ import ProfilePic from '../ProfilePic/ProfilePic'
 import josh from '../../images/Josh.svg'
 import Info from '../personalInfo/Info';
 
-export default function Josh({ handlePortfolio, handleCV, toggleComponents }) {
+export default function Josh({ handlePortfolio, handleCV, toggleComponents, handleJosh }) {
   return (
 
     <div className='pageContainer'>
@@ -43,6 +43,7 @@ export default function Josh({ handlePortfolio, handleCV, toggleComponents }) {
                 handleCV(true)
                 toggleComponents(false)
             }}>My CV</button>
+            <button onClick={handleJosh} >Close</button>
           </div>
 
     </div>
