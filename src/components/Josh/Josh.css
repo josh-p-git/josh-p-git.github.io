@@ -1,16 +1,67 @@
-.josh-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(51,144,144,0.5);
+.pageContainer {
+  padding: 22px;
+  background-color: #CBE1E8;
 }
 
-.josh-title {
-    padding: 30px;
-    max-width: 480px;
-    margin: 200px auto;
-    background: #fff;
-    border-radius: 10px;
+.name {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #16557B;
+}
+
+.aboutContainer {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  background-color: #A6C7CB;
+  border-radius: 20px;
+}
+.aboutText {
+  padding: 20px;
+  font-size: 18px;
+  text-align: justify;
+  margin-right: 20px;
+  color: #16557B;
+}
+
+.profile-pic {
+  height: 80%;
+  /* position: relative; */
+  /* overflow: hidden; */
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  /* resize: 'contain'; */
+  position: 'absolute';
+}
+
+.about p {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.buttons {
+  background-color: #A6C7CB;
+  flex-direction: column;
+  font-size: 18px;
+  color: #16557B;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  border-color: #CBE1E8;
+  margin-top: 30px;
+  margin-left:150px;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
