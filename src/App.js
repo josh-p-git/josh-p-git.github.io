@@ -63,7 +63,7 @@ function App() {
         <div>
           <div>
             {showJosh && <Josh handleJosh={handleJosh}/>}
-            <button onClick={() => setShowJosh(true)}><ProfilePic imageProp={josh}/></button>
+            <button className='face-button' onClick={() => setShowJosh(true)}><ProfilePic imageProp={josh} /></button>
           </div>
   
           <div>
