@@ -56,22 +56,22 @@ function App() {
   
       {showComponents && (
         <div className='face-buttons-container'>
-          <div>
+          <div className='face-buttons-box'>
             {showJosh && <Josh handleJosh={handleJosh}/>}
             <button className='face-button' onClick={() => setShowJosh(true)}><ProfilePic imageProp={josh} /></button>
           </div>
   
-          <div>
+          <div className='face-buttons-box'>
             {showLuiz && <Luiz handleLuiz={handleLuiz}/>}
             <button className='face-button' onClick={() => setShowLuiz(true)}><ProfilePic imageProp={luiz} /></button>
           </div>
   
-          <div>
+          <div className='face-buttons-box'>
             {showJuliana && <Juliana handleJuliana={handleJuliana}/>}
             <button className='face-button' onClick={() => setShowJuliana(true)}><ProfilePic imageProp={juliana} /></button>
           </div>
   
-          <div>
+          <div className='face-buttons-box'>
             {showRachel && <Rachel handleRachel={handleRachel}/>}
             <button className='face-button' onClick={() => setShowRachel(true)}><ProfilePic imageProp={rachel} /></button>
           </div>
@@ -79,6 +79,9 @@ function App() {
         
         <div>
           {showOurProjects && <OurProjects />}
+        </div>
+        <div className='text-container'>
+          <h1>hello world</h1>
         </div>
     </div>
   );

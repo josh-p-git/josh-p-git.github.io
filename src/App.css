@@ -16,9 +16,34 @@
 }
 
 .face-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 50%;
+  width: 50%;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 1px;
+  border: 2px solid black;
+}
+
+.face-buttons-box {
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  margin-left: 10%;
-  margin-top: 9%;
+  height: 50%;
+  width: 50%;
+  border: 2px solid blue;
+}
+
+.text-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 50%;
+  width: 50%;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 1px;
+  border: 2px solid black;
 }
