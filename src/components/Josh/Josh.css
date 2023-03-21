@@ -30,11 +30,12 @@
 
 .profile-pic {
   height: 80%;
-  /* position: relative; */
+  position: relative; 
   /* overflow: hidden; */
   padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
+  
 }
 
 .profile-pic img {

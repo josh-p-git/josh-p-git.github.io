@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import './App.css'
 import Josh from "./components/Josh/Josh";
+
 import Luiz from "./components/Luiz/Luiz";
 import Juliana from "./components/Juliana/Juliana";
 import Rachel from "./components/Rachel/Rachel";
@@ -39,38 +40,40 @@ export default App;
 //   )
 // }
 
-// function App() {
-//   const [showJosh, setShowJosh] = useState(false)
-//   const [showLuiz, setShowLuiz] = useState(false)
-//   const [showJuliana, setShowJuliana] = useState(false)
-//   const [showRachel, setShowRachel] = useState(false)
-//   const [showOurProjects, setShowOurProjects] = useState(false)
-//   const [showComponents, setShowComponents] = useState(true)
 
-//   const toggleComponents = (show) => {
-//     setShowComponents(show)
-//   }
 
-//   const handleJosh = () => {
-//     setShowJosh(false)
-//     setShowOurProjects(false)
-//   }
+function App() {
+  const [showJosh, setShowJosh] = useState(false)
+  const [showLuiz, setShowLuiz] = useState(false)
+  const [showJuliana, setShowJuliana] = useState(false)
+  const [showRachel, setShowRachel] = useState(false)
+  const [showOurProjects, setShowOurProjects] = useState(false)
+  const [showComponents, setShowComponents] = useState(true)
 
-//   const handleLuiz= () => {
-//     setShowLuiz(false)
-//   }
+  const toggleComponents = (show) => {
+    setShowComponents(show)
+  }
 
-//   const handleJuliana= () => {
-//     setShowJuliana(false)
-//   }
+  const handleJosh = () => {
+    setShowJosh(false)
+    setShowOurProjects(false)
+  }
 
-//   const handleRachel= () => {
-//     setShowRachel(false)
-//   }
+  const handleLuiz= () => {
+    setShowLuiz(false)
+  }
 
-//   const handleOurProjects= (show) => {
-//     setShowOurProjects(show)
-    
+  const handleJuliana= () => {
+    setShowJuliana(false)
+  }
+
+  const handleRachel= () => {
+    setShowRachel(false)
+  }
+
+  const handleOurProjects= (show) => {
+    setShowOurProjects(show)
+
 //   }
   
 
@@ -107,5 +110,3 @@ export default App;
     //       {showOurProjects && <OurProjects />}
     //     </div>
     // </div>
-
-
