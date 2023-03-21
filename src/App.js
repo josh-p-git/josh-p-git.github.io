@@ -14,15 +14,6 @@ import juliana from './images/Ju.svg'
 import rachel from './images/Rachel.svg'
 
 
-// function App() {
-//   return (
-//     <div className='josh'>
-//     <Navbar />
-//       <Josh />
-//     </div>
-//   )
-// }
-
 function App() {
   const [showJosh, setShowJosh] = useState(false)
   const [showLuiz, setShowLuiz] = useState(false)
