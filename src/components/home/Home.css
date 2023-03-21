@@ -16,15 +16,15 @@
   margin-left: 60px;
   margin-right: 60px;
   margin-top: 50px;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
   color: #323B60;
   text-align: center;
 }
 
 .text {
-  margin-top: -15px;
-  margin: 1px 20px 20px 20px;
+  justify-content: space-between;
+  margin: 0px 50px 20px 50px;
   /* margin-left: 20px;
   margin-right: 20px; */
   font-size: 18px;
