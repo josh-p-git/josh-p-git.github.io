@@ -1,17 +1,17 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Josh from "./components/Josh/Josh";
-import './App.css'
-import Luiz from "./components/Luiz/Luiz";
-import Juliana from "./components/Juliana/Juliana";
-import Rachel from "./components/Rachel/Rachel";
-import OurProjects from './components/OurProjects/OurProjects';
-import ProfilePic from './components/ProfilePic/ProfilePic';
+import Navbar from '../Navbar/Navbar';
+import Josh from '../Josh/Josh';
 
-import josh from './images/Josh.svg'
-import luiz from './images/Luiz.svg'
-import juliana from './images/Ju.svg'
-import rachel from './images/Rachel.svg'
+import Luiz from '../Luiz/Luiz';
+import Juliana from '../Juliana/Juliana';
+import Rachel from '../Rachel/Rachel';
+import OurProjects from '../OurProjects/OurProjects';
+import ProfilePic from '../ProfilePic/ProfilePic';
+
+import josh from '../../images/Josh.svg'
+import luiz from '../../images/Luiz.svg'
+import juliana from '../../images/Ju.svg'
+import rachel from '../../images/Rachel.svg'
 
 
 function Homepage() {
