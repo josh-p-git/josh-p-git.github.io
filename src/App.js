@@ -1,17 +1,45 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
-import Josh from "./components/Josh/Josh";
 import './App.css'
+import Josh from "./components/Josh/Josh";
+
 import Luiz from "./components/Luiz/Luiz";
 import Juliana from "./components/Juliana/Juliana";
 import Rachel from "./components/Rachel/Rachel";
 import OurProjects from './components/OurProjects/OurProjects';
-import ProfilePic from './components/ProfilePic/ProfilePic';
+import Home from './components/home/Home';
 
-import josh from './images/Josh.svg'
-import luiz from './images/Luiz.svg'
-import juliana from './images/Ju.svg'
-import rachel from './images/Rachel.svg'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function App() {
+
+
+  
+return (
+<Routes>
+   <Route path="/" element={<Home />} />
+   <Route path="/luiz" element={<Luiz />} />
+   <Route path="/josh" element={<Josh />} />
+   <Route path="/juliana" element={<Juliana />} />
+   <Route path="/rachel" element={<Rachel />} />
+   <Route path="/projects" element={<OurProjects />} />
+</Routes>
+
+)};
+
+export default App;
+
+// function App() {
+//   return (
+//     <div className='josh'>
+//     <Navbar />
+//       <Josh />
+//     </div>
+//   )
+// }
+
 
 
 function App() {
@@ -45,46 +73,40 @@ function App() {
 
   const handleOurProjects= (show) => {
     setShowOurProjects(show)
-    
-  }
 
-  return (
-    <div>
-      <div className='navbar-container'>
-        <Navbar handleOurProjects={handleOurProjects} toggleComponents={toggleComponents}/>
-      </div>
+//   }
   
-      {showComponents && (
-        <div className='face-buttons-container'>
-          <div className='face-buttons-box'>
-            {showJosh && <Josh handleJosh={handleJosh}/>}
-            <button className='face-button' onClick={() => setShowJosh(true)}><ProfilePic imageProp={josh} /></button>
-          </div>
+
+  // return (
+    // <div>
+    //   <div>
+    //     <Navbar handleOurProjects={handleOurProjects} toggleComponents={toggleComponents}/>
+    //   </div>
   
-          <div className='face-buttons-box'>
-            {showLuiz && <Luiz handleLuiz={handleLuiz}/>}
-            <button className='face-button' onClick={() => setShowLuiz(true)}><ProfilePic imageProp={luiz} /></button>
-          </div>
+    //   {showComponents && (
+    //     <div>
+    //       <div>
+    //         {showJosh && <Josh handleJosh={handleJosh}/>}
+    //         <button onClick={() => setShowJosh(true)}>Josh</button>
+    //       </div>
   
-          <div className='face-buttons-box'>
-            {showJuliana && <Juliana handleJuliana={handleJuliana}/>}
-            <button className='face-button' onClick={() => setShowJuliana(true)}><ProfilePic imageProp={juliana} /></button>
-          </div>
+    //       <div>
+    //         {showLuiz && <Luiz handleLuiz={handleLuiz}/>}
+    //         <button onClick={() => setShowLuiz(true)}>Luiz</button>
+    //       </div>
   
-          <div className='face-buttons-box'>
-            {showRachel && <Rachel handleRachel={handleRachel}/>}
-            <button className='face-button' onClick={() => setShowRachel(true)}><ProfilePic imageProp={rachel} /></button>
-          </div>
-        </div>)}
+    //       <div>
+    //         {showJuliana && <Juliana handleJuliana={handleJuliana}/>}
+    //         <button onClick={() => setShowJuliana(true)}>Juliana</button>
+    //       </div>
+  
+    //       <div>
+    //         {showRachel && <Rachel handleRachel={handleRachel}/>}
+    //         <button onClick={() => setShowRachel(true)}>Rachel</button>
+    //       </div>
+    //     </div>)}
         
-        <div>
-          {showOurProjects && <OurProjects />}
-        </div>
-        <div className='text-container'>
-          <h1>hello world</h1>
-        </div>
-    </div>
-  );
-      }
-
-export default App;
+    //     <div>
+    //       {showOurProjects && <OurProjects />}
+    //     </div>
+    // </div>
