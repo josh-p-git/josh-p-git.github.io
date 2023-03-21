@@ -8,6 +8,7 @@ import Juliana from '../Juliana/Juliana';
 import Rachel from '../Rachel/Rachel';
 import OurProjects from '../OurProjects/OurProjects';
 import ProfilePic from '../ProfilePic/ProfilePic';
+import './Home.css';
 
 import josh from '../../images/Josh.svg'
 import luiz from '../../images/Luiz.svg'
@@ -83,6 +84,17 @@ function Homepage() {
           </div>
         </div>)}
         
+        <div className='text-container'>
+          <p className='header'> Pensano Developers is a team of software engineers who are available to hire for job roles in the UK.
+          </p>
+
+          <p className='text'> Pensano is Italian for they think; and the developers at Pensano Developers do just that: they are problem solvers, they think outside the box, and they are deliberate.</p>
+          <br/>
+          <p className='text'> As graduates from Makers Academy, each is skilled at working in agile environments, test-driven development, object-oriented programming, and at quickly adapting to new tech stacks.</p>
+          <br/>
+          <p className='text'> This site is designed to showcase our work both collectively, as Pensano Devs, and our individual projects. Please take a look around.</p>
+          </div>
+
         <div>
           {showOurProjects && <OurProjects />}
         </div>
