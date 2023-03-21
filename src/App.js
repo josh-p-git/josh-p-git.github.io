@@ -9,6 +9,10 @@ import OurProjects from './components/OurProjects/OurProjects';
 import ProfilePic from './components/ProfilePic/ProfilePic';
 
 import josh from './images/Josh.svg'
+import luiz from './images/Luiz.svg'
+import juliana from './images/Ju.svg'
+import rachel from './images/Rachel.svg'
+
 
 // function App() {
 //   return (
@@ -68,17 +72,17 @@ function App() {
   
           <div>
             {showLuiz && <Luiz handleLuiz={handleLuiz}/>}
-            <button onClick={() => setShowLuiz(true)}>Luiz</button>
+            <button className='face-button' onClick={() => setShowLuiz(true)}><ProfilePic imageProp={luiz} /></button>
           </div>
   
           <div>
             {showJuliana && <Juliana handleJuliana={handleJuliana}/>}
-            <button onClick={() => setShowJuliana(true)}>Juliana</button>
+            <button className='face-button' onClick={() => setShowJuliana(true)}><ProfilePic imageProp={juliana} /></button>
           </div>
   
           <div>
             {showRachel && <Rachel handleRachel={handleRachel}/>}
-            <button onClick={() => setShowRachel(true)}>Rachel</button>
+            <button className='face-button' onClick={() => setShowRachel(true)}><ProfilePic imageProp={rachel} /></button>
           </div>
         </div>)}
         
