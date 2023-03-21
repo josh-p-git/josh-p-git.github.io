@@ -50,12 +50,12 @@ function App() {
 
   return (
     <div>
-      <div>
+      <div className='navbar-container'>
         <Navbar handleOurProjects={handleOurProjects} toggleComponents={toggleComponents}/>
       </div>
   
       {showComponents && (
-        <div>
+        <div className='face-buttons-container'>
           <div>
             {showJosh && <Josh handleJosh={handleJosh}/>}
             <button className='face-button' onClick={() => setShowJosh(true)}><ProfilePic imageProp={josh} /></button>

@@ -14,3 +14,12 @@
   width: 100%;
   height: 100%;
 }
+
+.face-buttons-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-left: 10%;
+  margin-top: 9%;
+  border: 2px solid black;
+}
