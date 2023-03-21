@@ -1,13 +1,12 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar/Navbar'
-import './App.css'
-import Josh from "./components/Josh/Josh";
-import Luiz from "./components/Luiz/Luiz";
-import Juliana from "./components/Juliana/Juliana";
-import Rachel from "./components/Rachel/Rachel";
-import OurProjects from './components/OurProjects/OurProjects';
-import Home from './home/Home';
-import App from './components/App'
+import Navbar from '../Navbar/Navbar';
+import Josh from '../Josh/Josh';
+import Luiz from '../Luiz/Luiz';
+import Juliana from '../Juliana/Juliana';
+import Rachel from '../Rachel/Rachel';
+import OurProjects from '../OurProjects/OurProjects';
+
+
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';

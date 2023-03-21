@@ -22,6 +22,7 @@ return (
    <Route path="/luiz" element={<Luiz />} />
    <Route path="/josh" element={<Josh />} />
    <Route path="/juliana" element={<Juliana />} />
+   <Route path="/rachel" element={<Rachel />} />
 </Routes>
 
 )};
