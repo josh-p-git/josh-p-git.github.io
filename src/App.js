@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import './App.css'
 import Josh from "./components/Josh/Josh";
-
 import Luiz from "./components/Luiz/Luiz";
 import Juliana from "./components/Juliana/Juliana";
 import Rachel from "./components/Rachel/Rachel";
@@ -40,40 +39,38 @@ export default App;
 //   )
 // }
 
+// function App() {
+//   const [showJosh, setShowJosh] = useState(false)
+//   const [showLuiz, setShowLuiz] = useState(false)
+//   const [showJuliana, setShowJuliana] = useState(false)
+//   const [showRachel, setShowRachel] = useState(false)
+//   const [showOurProjects, setShowOurProjects] = useState(false)
+//   const [showComponents, setShowComponents] = useState(true)
 
+//   const toggleComponents = (show) => {
+//     setShowComponents(show)
+//   }
 
-function App() {
-  const [showJosh, setShowJosh] = useState(false)
-  const [showLuiz, setShowLuiz] = useState(false)
-  const [showJuliana, setShowJuliana] = useState(false)
-  const [showRachel, setShowRachel] = useState(false)
-  const [showOurProjects, setShowOurProjects] = useState(false)
-  const [showComponents, setShowComponents] = useState(true)
+//   const handleJosh = () => {
+//     setShowJosh(false)
+//     setShowOurProjects(false)
+//   }
 
-  const toggleComponents = (show) => {
-    setShowComponents(show)
-  }
+//   const handleLuiz= () => {
+//     setShowLuiz(false)
+//   }
 
-  const handleJosh = () => {
-    setShowJosh(false)
-    setShowOurProjects(false)
-  }
+//   const handleJuliana= () => {
+//     setShowJuliana(false)
+//   }
 
-  const handleLuiz= () => {
-    setShowLuiz(false)
-  }
+//   const handleRachel= () => {
+//     setShowRachel(false)
+//   }
 
-  const handleJuliana= () => {
-    setShowJuliana(false)
-  }
-
-  const handleRachel= () => {
-    setShowRachel(false)
-  }
-
-  const handleOurProjects= (show) => {
-    setShowOurProjects(show)
-
+//   const handleOurProjects= (show) => {
+//     setShowOurProjects(show)
+    
 //   }
   
 
@@ -110,3 +107,5 @@ function App() {
     //       {showOurProjects && <OurProjects />}
     //     </div>
     // </div>
+
+
