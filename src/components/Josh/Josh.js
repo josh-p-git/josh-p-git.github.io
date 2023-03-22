@@ -50,7 +50,7 @@ export default function Josh({ handlePortfolio, handleCV, toggleComponents, hand
               />
             </div>
 
-          <div>
+          <div className='buttons-container'>
             <button className='buttons' onClick={() => {
                 handlePortfolio(true)
                 toggleComponents(false)
@@ -60,10 +60,7 @@ export default function Josh({ handlePortfolio, handleCV, toggleComponents, hand
                 handleCV(true)
                 toggleComponents(false)
             }}>My CV</button>
-
-            <button className='buttons' onClick={handleJosh} >Close</button>
           </div>
-
     </div>
   );
 }
