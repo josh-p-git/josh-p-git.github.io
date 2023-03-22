@@ -1,9 +1,9 @@
 .text-container {
-  /* display: flex; */
-  /* justify-content: flex-end; */
+  /* display: flex;
+  justify-content: flex-end; */
   /* grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr); */
-  height: 50%;
+  height: 80%;
   width: 50%;
   position: absolute;
   margin-left: 50%;
@@ -52,7 +52,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  height: 50%;
+  height: 80%;
   width: 50%;
   flex-direction: row;
   position: absolute;
