@@ -1,7 +1,12 @@
 import './Josh.css';
 import ProfilePic from '../ProfilePic/ProfilePic'
 import josh from '../../images/Josh.svg'
-import Info from '../personalInfo/Info';
+
+import Email from '../personalInfo/Email';
+import House from '../personalInfo/House';
+import Linkedin from '../personalInfo/Linkedin';
+import Phone from '../personalInfo/Phone';
+import Git from '../personalInfo/Git';
 
 export default function Josh({ handlePortfolio, handleCV, toggleComponents, handleJosh }) {
   return (
@@ -28,16 +33,24 @@ export default function Josh({ handlePortfolio, handleCV, toggleComponents, hand
           </div>
           
           <div className='info-container'>
-            <Info
+            <Git
               git={"https://github.com/josh-p-git"}
+              />
+              <Linkedin
               linkedin={"https://www.linkedin.com/in/jpenneynl/"}
+              />
+              <House
               location={"Southampton"}
+              />
+              <Phone
               phone={"072194321"}
+              />
+              <Email
               email={"josh.penney@gmail.com"}
               />
             </div>
 
-          <div>
+          <div className='buttons-container'>
             <button className='buttons' onClick={() => {
                 handlePortfolio(true)
                 toggleComponents(false)
@@ -47,10 +60,7 @@ export default function Josh({ handlePortfolio, handleCV, toggleComponents, hand
                 handleCV(true)
                 toggleComponents(false)
             }}>My CV</button>
-
-            <button className='buttons' onClick={handleJosh} >Close</button>
           </div>
-
     </div>
   );
 }
