@@ -1,36 +1,67 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 5px; */
-    background-color: #E4D8EE;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E4D8EE;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-container {
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  background-color: #E4D8EE;
+}
   
-  .navbar img {
-    cursor: pointer;
-    height: 500;
-    margin-left: 20px;
-  }
-  
-  .navbar .our-projects {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    margin-right: 20px;
-    font-size: 18px;
-    color: #16557B;
-  }
-  
-  .navbar button {
-    margin-right: 30px;
-    background-color: #CBE1E8;
-    font-size: 18px;
-    color: #16557B;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-    border-color: #CBE1E8;
-  }
+.navbar img {
+  cursor: pointer;
+  height: 500;
+  margin-left: 20px;
+}
+
+.navbar .our-projects {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 18px;
+  color: #16557B;
+}
+
+.navbar button {
+  margin-right: 30px;
+  background-color: #CBE1E8;
+  font-size: 18px;
+  color: #16557B;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  border-color: #CBE1E8;
+}
+
+.navbar .team-container {
+  margin-left: auto;
+}
+
+.menu-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column; /* added to stack menu items vertically */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  background-color: #E4D8EE;
+  z-index: 1000;
+}
