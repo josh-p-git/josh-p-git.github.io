@@ -1,0 +1,13 @@
+.info {
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  color: #16557B;
+  /* below: to give space between items */
+  /* margin-inline-start: -20%; */
+}
+
+.link:visited {
+  color: #16557B;
+}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4eea8d18.css",
+    "main.js": "/static/js/main.35d48972.js",
+    "static/js/787.3c54f43d.chunk.js": "/static/js/787.3c54f43d.chunk.js",
+    "static/media/Ju.svg": "/static/media/Ju.632fe5a7b26899389a4cb8ab1b5331e3.svg",
+    "static/media/Josh.svg": "/static/media/Josh.44f8d491c1319f7c51ba42590ec51da4.svg",
+    "static/media/Rachel.svg": "/static/media/Rachel.a0bdafd32c27866d00c9505351e8fbe7.svg",
+    "static/media/Luiz.svg": "/static/media/Luiz.9e97e98bfd2fcc3d64730d16836d0f64.svg",
+    "static/media/logo-navbar.png": "/static/media/logo-navbar.6c8cd86994f41f616122.png",
+    "static/media/four-diamonds.svg": "/static/media/four-diamonds.d7ce7afa94a31847bec95d1badbad251.svg",
+    "static/media/pink-line.svg": "/static/media/pink-line.3bdc8b747473caa7a006acc5fbcf5285.svg",
+    "index.html": "/index.html",
+    "main.4eea8d18.css.map": "/static/css/main.4eea8d18.css.map",
+    "main.35d48972.js.map": "/static/js/main.35d48972.js.map",
+    "787.3c54f43d.chunk.js.map": "/static/js/787.3c54f43d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4eea8d18.css",
+    "static/js/main.35d48972.js"
+  ]
+}
