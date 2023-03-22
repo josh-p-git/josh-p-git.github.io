@@ -9,6 +9,8 @@ import Rachel from '../Rachel/Rachel';
 import OurProjects from '../OurProjects/OurProjects';
 import ProfilePic from '../ProfilePic/ProfilePic';
 import './Home.css';
+import graySquareBackground from '../../images/gray-background.svg'
+import pinkLine from '../../images/pink-line.svg'
 
 import josh from '../../images/Josh.svg'
 import luiz from '../../images/Luiz.svg'
@@ -27,9 +29,6 @@ function Homepage() {
   const [showComponents, setShowComponents] = useState(true)
 
   const toggleComponents = (show) => {
-
-    
-
     setShowComponents(show)
   }
 
@@ -52,7 +51,6 @@ function Homepage() {
 
   const handleOurProjects= (show) => {
     setShowOurProjects(show)
-    
   }
 
   function handleClick(path) {
@@ -61,10 +59,14 @@ function Homepage() {
 
   return (
     <div>
-      <div className='navbar-container'>
+      <div>
         <Navbar handleOurProjects={handleOurProjects} toggleComponents={toggleComponents}/>
       </div>
   
+      <div className='gray-square-background'>
+        <img src={graySquareBackground}/>
+      </div>
+
       {showComponents && (
         <div className='face-buttons-container'>
           <div className='face-buttons-box'>
@@ -84,20 +86,25 @@ function Homepage() {
           </div>
         </div>)}
         
-        <div className='text-container'>
-          <p className='header'> Pensano Developers is a team of software engineers who are available to hire for job roles in the UK.
-          </p>
+        
 
+        <div className='text-container'>
+          
+          <p className='header'> Pensano Developers is a team of software engineers who are available to hire for job roles in the UK.</p>
+          <div className='pink-line'>
+            <img src={pinkLine}/>
+          </div>
           <p className='text'> Pensano is Italian for they think; and the developers at Pensano Developers do just that: they are problem solvers, they think outside the box, and they are deliberate.</p>
           <p className='text'> As graduates from Makers Academy, each is skilled at working in agile environments, test-driven development, object-oriented programming, and at quickly adapting to new tech stacks.</p>
           <p className='text'> This site is designed to showcase our work both collectively, as Pensano Devs, and our individual projects. Please take a look around.</p>
-          </div>
+            
 
         <div>
           {showOurProjects && <OurProjects />}
         </div>
+      </div>
     </div>
   );
-      }
+}
 
 export default Homepage;
