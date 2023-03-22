@@ -22,7 +22,12 @@ export default function Josh({ handlePortfolio, handleCV, toggleComponents, hand
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially
             </p>
+            </div>
+
             
+          </div>
+          
+          <div className='info-container'>
             <Info
               git={"https://github.com/josh-p-git"}
               linkedin={"https://www.linkedin.com/in/jpenneynl/"}
@@ -31,8 +36,7 @@ export default function Josh({ handlePortfolio, handleCV, toggleComponents, hand
               email={"josh.penney@gmail.com"}
               />
             </div>
-          </div>
-    
+
           <div>
             <button className='buttons' onClick={() => {
                 handlePortfolio(true)

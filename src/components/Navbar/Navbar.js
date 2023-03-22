@@ -5,12 +5,12 @@ import logoNav from '../../images/logo-navbar.png'
 
 export default function Navbar({ handleOurProjects, toggleComponents }) {
     return (
-        <div className="navbar">
+        <div className='navbar'>
             <img src={logoNav} width="200" onClick={() => {
                 handleOurProjects(false)
                 toggleComponents(true)
             }}/> 
-            <div className="our-projects">
+            <div className='our-projects'>
                 <button onClick={() => {
                     handleOurProjects(true)
                     toggleComponents(false)
