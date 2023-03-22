@@ -9,16 +9,7 @@
   margin-left: 50%;
   margin-top: 1px;
   background-color: #E5EDEF;
-  border: 2px solid red;
-}
-
-.gray-square-background {
-  position: absolute;
-  margin-left: -20px;
-  width: 100%;
-  z-index: -1;
-  display: flex;
-  size: contain;
+  /* border: 2px solid red; */
 }
 
 .header {
@@ -34,8 +25,20 @@
 
 .pink-line {
   position: absolute;
-  margin-top: -50px;
-  margin-left: -23%;
+  margin-top: -60px;
+  margin-left: -150px;
+}
+
+.four-diamonds {
+  z-index: 2;
+  margin-left: 16%;
+  margin-top: -28%;
+}
+
+.pink-dots {
+  height: ;
+  margin-top: 40%;
+  margin-left: -2%;
 }
 
 .text {
