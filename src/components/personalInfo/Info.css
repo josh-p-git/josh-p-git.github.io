@@ -3,10 +3,9 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
-  margin-right: 30px;
   color: #16557B;
   /* below: to give space between items */
-  margin-inline-start: -20%;
+  /* margin-inline-start: -20%; */
 }
 
 .link:visited {

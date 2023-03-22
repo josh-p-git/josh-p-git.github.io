@@ -53,7 +53,7 @@
 .info-container {
   /* margin-left: 30%; */
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 20px;
 }
 .buttons {
