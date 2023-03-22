@@ -1,15 +1,15 @@
+.page-container {
+  /* display: flex; */
+  width: 100%;
+}
+
 .text-container {
-  /* display: flex;
-  justify-content: flex-end; */
-  /* grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr); */
   height: 80%;
   width: 50%;
   position: absolute;
   margin-left: 50%;
   margin-top: 1px;
   background-color: #E5EDEF;
-  /* border: 2px solid red; */
 }
 
 .header {
@@ -24,11 +24,17 @@
 }
 
 .pink-line {
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: center;
   margin-top: -60px;
-  margin-left: -150px;
+  margin-bottom: 40px;
+  margin-left: 17%;
+  background-color: #CFB8DF;
+  height: 15px;
+  width: 500px;
+  border-radius: 25px;
 }
-
 .four-diamonds {
   z-index: 2;
   margin-left: 16%;
