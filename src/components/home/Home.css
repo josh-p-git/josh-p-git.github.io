@@ -1,5 +1,4 @@
 .page-container {
-  /* display: flex; */
   width: 100%;
 }
 
@@ -8,33 +7,33 @@
   width: 50%;
   position: absolute;
   margin-left: 50%;
-  margin-top: 1px;
   background-color: #E5EDEF;
 }
 
 .header {
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 70px;
-  margin-bottom: 100px;
-  font-size: 30px;
+  margin: 70px 60px 50px 60px;
+  font-size: 25px;
   font-weight: bold;
   color: #323B60;
   text-align: center;
 }
 
 .pink-line {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: -60px;
-  margin-bottom: 40px;
-  margin-left: 17%;
   background-color: #CFB8DF;
-  height: 15px;
-  width: 500px;
+  width: 80%;
+  height: 10px;
   border-radius: 25px;
+  margin-left: 10%;
 }
+
+.text {
+  justify-content: space-between;
+  margin: 40px 50px 20px 50px;
+  font-size: 18px;
+  color: #323B60;
+  text-align: justify;
+}
+
 .four-diamonds {
   z-index: 2;
   margin-left: 16%;
@@ -44,14 +43,6 @@
 .pink-dots {
   margin-top: 40%;
   margin-left: -2%;
-}
-
-.text {
-  justify-content: space-between;
-  margin: 0px 50px 20px 50px;
-  font-size: 18px;
-  color: #323B60;
-  text-align: justify;
 }
 
 .face-buttons-container {
