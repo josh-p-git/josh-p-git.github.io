@@ -24,12 +24,12 @@ export default function Navbar({ handleOurProjects, toggleComponents }) {
     
     return (
         <div className='navbar'>
-            <img src={logoNav} width="200" onClick={() => {
+            <img src={logoNav} width='150' onClick={() => {
                 handleOurProjects(false)
                 toggleComponents(true)
             }}/> 
-            <div className="team-container">
-                <button className="button" onClick={() => setOpen(!open)}>The Team</button>
+            <div className='team-container'>
+                <button className='button' onClick={() => setOpen(!open)}>The Team</button>
                 {open && DropdownMenu()}
             </div>
             <div className='our-projects'>
