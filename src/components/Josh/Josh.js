@@ -1,4 +1,4 @@
-import './Josh.css';
+import '../profile-styling/profileStyling.css';
 import ProfilePic from '../ProfilePic/ProfilePic'
 import josh from '../../images/Josh.svg'
 
