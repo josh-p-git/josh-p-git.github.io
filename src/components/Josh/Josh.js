@@ -8,7 +8,7 @@ import Linkedin from '../personalInfo/Linkedin';
 import Phone from '../personalInfo/Phone';
 import Git from '../personalInfo/Git';
 
-export default function Josh({ handlePortfolio, handleCV, toggleComponents, handleJosh }) {
+export default function Josh({ handlePortfolio, handleCV, toggleComponents }) {
   return (
 
     <div className='pageContainer'>
