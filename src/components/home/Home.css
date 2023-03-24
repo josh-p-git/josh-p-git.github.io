@@ -45,14 +45,14 @@
   position: absolute; /*dont change this */
   background-color: transparent; /*dont change this */
   margin: 20px 10px 0px 70px; /*dont change this */
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .individual-container {
   position: relative;
   cursor: pointer;
   justify-content: space-evenly;
-  background-color: #93c7bf;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -83,11 +83,6 @@
   height: 110px;
 }
 
-.four-diamonds {
-  align-self: center;
-  height: 50px;
-}
-
 .rachel-photo {
   border-color: transparent;
   font-size: 14px;
@@ -96,15 +91,12 @@
   height: 110px;
 }
 
-.face-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  /* padding: 0;
-  margin: 0; */
-  /* width: 100%;
-  height: 100%; */
+.four-diamonds {
+  border-color: transparent;
+  text-align: center;
+  position: relative;
+  height: 20px;
+  margin-left: -20;
 }
 
 .footer-container {

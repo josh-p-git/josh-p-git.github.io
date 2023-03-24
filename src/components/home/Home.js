@@ -87,21 +87,9 @@ function Homepage() {
             <p>Rachel</p>
           </div>
 
-          {/* <div>
-            <button className='luiz-photo' onClick={() => handleClick('/luiz')}><ProfilePic imageProp={luiz} /></button>
+          <div className='individual-container'>
+            <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
           </div>
-  
-          <div>
-          <img className='four-diamonds' style={{ width: 150, height: 75 }} src={fourDiamonds} alt='Four diamonds'/>
-        </div>
-
-          <div>
-          <button className='juliana-photo' onClick={() => handleClick('/juliana')}><ProfilePic imageProp={juliana} /></button>
-          </div>
-  
-          <div>
-          <button className='rachel-photo' onClick={() => handleClick('/rachel')}><ProfilePic imageProp={rachel} /></button>
-          </div> */}
           
           <div className='pink-dots'>
           <img style={{ width: 700, height: 75 }} src={pinkDots} alt='Pink dots line'/>
