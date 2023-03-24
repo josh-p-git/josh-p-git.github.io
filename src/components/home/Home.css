@@ -85,7 +85,6 @@
 .footer-container {
   width: 100%;
   height: 10%;
-  /* background-color: #E4D8EE; */
   background-color: #93c7bf;
   position: fixed;
   bottom: 0;
@@ -94,10 +93,9 @@
 .footer-text {
   background-color: #93c7bf;
   border: 0cm;
-  justify-self: center;
-  margin-top: 40px;
-  margin-left: 50%;
-  font-size: 18px;
+  margin-top: 25px;
+  margin-left: 40%;
+  font-size: 14px;
   font-weight: bold;
   color: #323B60;
   cursor: pointer;
