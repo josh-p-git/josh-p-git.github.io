@@ -34,41 +34,56 @@
   text-align: justify;
 }
 
-.four-diamonds {
-  z-index: 2;
-  margin-left: 16%;
-  margin-top: -28%;
-}
-
 .pink-dots {
-  margin-top: 40%;
-  margin-left: -2%;
+  margin-top: 30%;
+  margin-left: 1%;
 }
 
-.face-buttons-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  height: 80%;
-  width: 50%;
-  flex-direction: row;
-  position: absolute;
-  margin-left: 1%;
-  margin-top: 1px;
+.faces-buttons-container {
+  height: 65%; /*dont change this */
+  width: 40%; /*dont change this */
+  position: absolute; /*dont change this */
+  background-color: transparent; /*dont change this */
+  margin: 35px 10px 0px 30px; /*dont change this */
   border: 2px solid black;
 }
 
-.face-buttons-box {
+.josh-container {
+  position: absolute;
+  cursor: pointer;
+  justify-content: space-evenly;
+  background-color: #93c7bf;
   display: flex;
-  height: 50%;
-  width: 50%;
-  border: 2px solid blue;
+  flex-direction: column;
+  align-items: center;
+  color: #323B60;
+  font-weight: bold;
+}
+.josh-photo {
+  border-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  height: 110px;
 }
 
-.josh {
-  width: 100%;
-  height: 100%;
+.luiz-photo {
   background-color: #CBE1E8;
+  cursor: pointer;
+}
+
+.four-diamonds {
+  align-self: center;
+  height: 50px;
+}
+
+.juliana-photo {
+  background-color: #CBE1E8;
+  cursor: pointer;
+}
+.rachel-photo {
+  background-color: #CBE1E8;
+  cursor: pointer;
 }
 
 .face-button {
@@ -76,10 +91,10 @@
   outline: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
+  /* padding: 0;
+  margin: 0; */
+  /* width: 100%;
+  height: 100%; */
 }
 
 .footer-container {

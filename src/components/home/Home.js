@@ -11,7 +11,6 @@ import Luiz from '../Luiz/Luiz';
 import Juliana from '../Juliana/Juliana';
 import Rachel from '../Rachel/Rachel';
 
-import pinkLine from '../../images/pink-line.svg'
 import pinkDots from '../../images/pink-dots.png'
 import fourDiamonds from '../../images/four-diamonds.svg'
 
@@ -67,27 +66,27 @@ function Homepage() {
       </div>
 
       {showComponents && (
-        <div className='face-buttons-container'>
-          
-          <div className='face-buttons-box'>
-            <button className='face-button' onClick={() => handleClick('/josh')}><ProfilePic imageProp={josh} /></button>
+        <div className='faces-buttons-container'>
+          <div className='josh-container'>
+            <img className='josh-photo' src={josh} onClick={() => handleClick('/josh')} />
+            <p>Josh</p>
           </div>
   
-          <div className='face-buttons-box'>
-            <button className='face-button' onClick={() => handleClick('/luiz')}><ProfilePic imageProp={luiz} /></button>
+          {/* <div>
+            <button className='luiz-photo' onClick={() => handleClick('/luiz')}><ProfilePic imageProp={luiz} /></button>
           </div>
   
-          <div className='four-diamonds'>
-          <img style={{ width: 150, height: 75 }} src={fourDiamonds} alt='Four diamonds'/>
+          <div>
+          <img className='four-diamonds' style={{ width: 150, height: 75 }} src={fourDiamonds} alt='Four diamonds'/>
         </div>
 
-          <div className='face-buttons-box'>
-          <button className='face-button' onClick={() => handleClick('/juliana')}><ProfilePic imageProp={juliana} /></button>
+          <div>
+          <button className='juliana-photo' onClick={() => handleClick('/juliana')}><ProfilePic imageProp={juliana} /></button>
           </div>
   
-          <div className='face-buttons-box'>
-          <button className='face-button' onClick={() => handleClick('/rachel')}><ProfilePic imageProp={rachel} /></button>
-          </div>
+          <div>
+          <button className='rachel-photo' onClick={() => handleClick('/rachel')}><ProfilePic imageProp={rachel} /></button>
+          </div> */}
           
           <div className='pink-dots'>
           <img style={{ width: 700, height: 75 }} src={pinkDots} alt='Pink dots line'/>
@@ -109,6 +108,7 @@ function Homepage() {
       <div className='footer-container'>
           <div>
             <button className='footer-text' onClick={() => handleClick('/our-projects')}>Check out our projects here.</button>
+            <p></p>
           </div>
       </div>
     </div>
