@@ -67,11 +67,26 @@ function Homepage() {
 
       {showComponents && (
         <div className='faces-buttons-container'>
-          <div className='josh-container'>
+          <div className='individual-container'>
             <img className='josh-photo' src={josh} onClick={() => handleClick('/josh')} />
             <p>Josh</p>
           </div>
-  
+
+          <div className='individual-container'>
+            <img className='juliana-photo' src={juliana} onClick={() => handleClick('/juliana')} />
+            <p>Juliana</p>
+          </div>
+
+          <div className='individual-container'>
+            <img className='luiz-photo' src={luiz} onClick={() => handleClick('/luiz')} />
+            <p>Luiz</p>
+          </div>
+
+          <div className='individual-container'>
+            <img className='rachel-photo' src={rachel} onClick={() => handleClick('/rachel')} />
+            <p>Rachel</p>
+          </div>
+
           {/* <div>
             <button className='luiz-photo' onClick={() => handleClick('/luiz')}><ProfilePic imageProp={luiz} /></button>
           </div>

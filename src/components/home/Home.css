@@ -41,23 +41,24 @@
 
 .faces-buttons-container {
   height: 65%; /*dont change this */
-  width: 40%; /*dont change this */
+  width: 25%; /*dont change this */
   position: absolute; /*dont change this */
   background-color: transparent; /*dont change this */
-  margin: 35px 10px 0px 30px; /*dont change this */
+  margin: 20px 10px 0px 70px; /*dont change this */
   border: 2px solid black;
 }
 
-.josh-container {
-  position: absolute;
+.individual-container {
+  position: relative;
   cursor: pointer;
   justify-content: space-evenly;
   background-color: #93c7bf;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   color: #323B60;
   font-weight: bold;
+  padding: 5px;
 }
 .josh-photo {
   border-color: transparent;
@@ -67,9 +68,19 @@
   height: 110px;
 }
 
+.juliana-photo {
+  border-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  height: 110px;
+}
 .luiz-photo {
-  background-color: #CBE1E8;
-  cursor: pointer;
+  border-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  height: 110px;
 }
 
 .four-diamonds {
@@ -77,13 +88,12 @@
   height: 50px;
 }
 
-.juliana-photo {
-  background-color: #CBE1E8;
-  cursor: pointer;
-}
 .rachel-photo {
-  background-color: #CBE1E8;
-  cursor: pointer;
+  border-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  height: 110px;
 }
 
 .face-button {
