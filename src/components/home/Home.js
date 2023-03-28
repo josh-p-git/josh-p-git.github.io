@@ -1,16 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
-import Navbar from '../Navbar/Navbar';
-import OurProjects from '../OurProjects/OurProjects';
-import ProfilePic from '../ProfilePic/ProfilePic';
 import './Home.css';
 
-import Josh from '../Josh/Josh';
-import Luiz from '../Luiz/Luiz';
-import Juliana from '../Juliana/Juliana';
-import Rachel from '../Rachel/Rachel';
-
+import Navbar from '../Navbar/Navbar';
+import OurProjects from '../OurProjects/OurProjects';
 import pinkDots from '../../images/pink-dots.png'
 import fourDiamonds from '../../images/four-diamonds.svg'
 
@@ -100,9 +94,6 @@ function Homepage() {
           <p className='text'> This site is designed to showcase our work both collectively, as Pensano Devs, and our individual projects. Please take a look around.</p>
         </div>
 
-        {/* <div className='pink-dots'>
-          <img style={{ width: 700, height: 75 }} src={pinkDots} alt='Pink dots line'/> */}
-
       <div>
         {showOurProjects && <OurProjects />}
       </div>
@@ -111,7 +102,12 @@ function Homepage() {
         <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
       </div>
 
+      <div className='pink-dots'>
+          <img style={{ width: 800, height: 80 }} src={pinkDots} alt='Decorative line with pink dots'/>
+        </div>
+
       <div className='footer-container'>
+        
           <div>
             <button className='footer-text' onClick={() => handleClick('/our-projects')}>Check out our projects here.</button>
             <p></p>
