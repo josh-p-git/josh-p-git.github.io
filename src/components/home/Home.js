@@ -69,29 +69,20 @@ function Homepage() {
         <div className='team-container-one'>
           <div className='.photo-josh-rachel-container'>
             <img className='josh-photo' src={josh} alt='Joshs photo' onClick={() => handleClick('/josh')} />
-            <p>Josh</p>
-          </div>
-
-          <div className='.photo-josh-rachel-container'>
-            <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
+            <p style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Josh </p>
           </div>
 
           <div className='.photo-josh-rachel-container'>
             <img className='rachel-photo' src={rachel} alt='Rachels photo' onClick={() => handleClick('/rachel')} />
-            <p>Rachel</p>
+            <p style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Rachel </p>
           </div>
         </div>)}
 
       {showComponents && (
-
         <div className='team-container-two'>
           <div className='photo-ju-luiz-container'>
             <img className='juliana-photo' src={juliana} alt='Julianas photo' onClick={() => handleClick('/juliana')} />
             <p>Juliana</p>
-          </div>
-
-          <div className='photo-ju-luiz-container'>
-            <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
           </div>
 
           <div className='photo-ju-luiz-container'>
@@ -114,6 +105,10 @@ function Homepage() {
 
       <div>
         {showOurProjects && <OurProjects />}
+      </div>
+      
+      <div className='four-diamonds'>
+        <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
       </div>
 
       <div className='footer-container'>

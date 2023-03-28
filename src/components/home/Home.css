@@ -40,41 +40,46 @@
 }
 
 .team-container-one {
-  height: 50%; /*dont change this */
+  height: 55%; /*dont change this */
   width: 15%; /*dont change this */
   position: absolute; /*dont change this */
   background-color: transparent; /*dont change this */
   margin-left: 7%;
-  margin-top: 40px;
+  margin-top: 50px;
   /* border: 2px solid black; */
 }
 
 .photo-josh-rachel-container {
   position: relative;
-  cursor: pointer;
   justify-content: space-evenly;
   background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: #323B60;
-  font-weight: bold;
   padding: 5px;
 }
 .josh-photo {
   border-color: transparent;
   font-size: 14px;
-  text-align: center;
   position: relative;
   height: 110px;
+  cursor: pointer;
+}
+.rachel-photo {
+  border-color: transparent;
+  font-size: 14px;
+  position: relative;
+  margin-top: 60px;
+  height: 110px;
+  cursor: pointer;
 }
 
 .team-container-two {
-  height: 50%; /*dont change this */
+  height: 55%; /*dont change this */
   width: 15%; /*dont change this */
   position: absolute; /*dont change this */
   background-color: transparent; /*dont change this */
-  margin-top: 40px;
+  margin-top: 50px;
   /* border: 2px solid black; */
   margin-left: 28%;
 }
@@ -102,23 +107,16 @@
   font-size: 14px;
   text-align: center;
   position: relative;
-  height: 110px;
-}
-
-.rachel-photo {
-  border-color: transparent;
-  font-size: 14px;
-  text-align: center;
-  position: relative;
+  margin-top: 50px;
   height: 110px;
 }
 
 .four-diamonds {
   border-color: transparent;
-  text-align: center;
-  position: relative;
   height: 20px;
-  margin-left: -20;
+  position: static;
+  margin-top: 15%;
+  margin-left: 11%;
 }
 
 .footer-container {
