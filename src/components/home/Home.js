@@ -57,10 +57,6 @@ function Homepage() {
   return (
   <Layout>
     <div className='page-container'>
-      <div>
-        <Navbar handleOurProjects={handleOurProjects} toggleComponents={toggleComponents}/>
-      </div>
-
       {showComponents && (
         <div className='team-container-one'>
           <div className='.photo-josh-rachel-container'>
