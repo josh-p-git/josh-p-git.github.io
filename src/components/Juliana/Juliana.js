@@ -31,15 +31,15 @@ export default function Juliana() {
   
   return (
     <Layout>
-      <div className='pageContainer'>
+      <div className='pageContainerJu'>
         <h1 className='name'>Juliana Nocchi</h1>
-          <div className='aboutContainer'>
+          <div className='aboutContainerJu'>
             <div className='profile-pic'>
               <ProfilePic imageProp={Ju} />
             </div>
 
             <div>
-              <p className='aboutText'>
+              <p className='aboutTextJu'>
               I am a career changer junior software engineer with experience in 
               front end languages and frameworks such as HTML, CSS, JavaScript, React, 
               and React Native to create stunning user interfaces; back end technologies 
@@ -54,7 +54,7 @@ export default function Juliana() {
               
             </div>
             
-            <div className='info-container'>
+            <div className='info-containerJu'>
               <Git
                 git={"https://github.com/junocchi"}
                 />
@@ -68,7 +68,7 @@ export default function Juliana() {
                 phone={"07955599"}
                 />
                 <Email
-                email={"ju.nocchi@gmail.com"}
+                email={"junocchi@gmail.com"}
                 />
               </div>
 

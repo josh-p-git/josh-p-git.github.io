@@ -1,7 +1,7 @@
 import './Navbar.css'
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-import logoNav from '../../images/logo-navbar.png'
+import logoPensano from '../../images/logo-pensano.png'
 import makersLogo from '../../images/logo-makers.png'
 import { useState } from 'react' 
 
@@ -31,24 +31,23 @@ export default function Navbar({ handleOurProjects, toggleComponents }) {
     
     return (
         <div className='navbar'>
-            <img src={logoNav} width='150' onClick={() => {
-                handleOurProjects(false)
-                toggleComponents(true)
+            <img src={logoPensano} width='150' onClick={() => {
+                handleClick('/')
             }}/> 
             <div className='team-container'>
-                <button className='button' onClick={() => setOpen(!open)}>The Team</button>
-                {open && DropdownMenu()}
+              <button className='button' onClick={() => setOpen(!open)}>The Team</button>
+              {open && DropdownMenu()}
             </div>
             <div className='our-projects'>
-                <button onClick={() => {
-                    handleOurProjects(true)
-                    toggleComponents(false)
-                }}>Our Projects</button>
+              <button onClick={() => {
+                  handleOurProjects(true)
+                  toggleComponents(false)
+              }}>Our Projects</button>
             </div>
             {showComponents && (
-              <div className='navbar-button'>
+              <div className='navbar-buttons'>
                 <a href='https://makers.tech' target="_blank">
-                  <img className='makers-logo' src={makersLogo} alt='Makers Academy'/>
+                  <img className='makers-logo' src={makersLogo} alt='Makers Academy logo'/>
                   </a>
               </div>)}
         </div>
