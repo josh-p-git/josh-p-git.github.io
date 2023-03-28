@@ -34,40 +34,60 @@
   text-align: justify;
 }
 
-.pink-dots {
-  margin-top: 30%;
-  margin-left: 1%;
-}
-
-.faces-buttons-container {
-  height: 65%; /*dont change this */
-  width: 25%; /*dont change this */
+.team-container-one {
+  height: 55%; /*dont change this */
+  width: 11%; /*dont change this */
   position: absolute; /*dont change this */
   background-color: transparent; /*dont change this */
-  margin: 20px 10px 0px 70px; /*dont change this */
+  margin-left: 7%;
+  margin-top: 50px;
   /* border: 2px solid black; */
 }
-
-.individual-container {
+.photo-josh-rachel-container {
   position: relative;
-  cursor: pointer;
   justify-content: space-evenly;
   background-color: transparent;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  color: #323B60;
-  font-weight: bold;
   padding: 5px;
 }
 .josh-photo {
   border-color: transparent;
   font-size: 14px;
-  text-align: center;
   position: relative;
   height: 110px;
+  cursor: pointer;
+}
+.rachel-photo {
+  border-color: transparent;
+  font-size: 14px;
+  position: relative;
+  margin-top: 60px;
+  height: 110px;
+  cursor: pointer;
 }
 
+.team-container-two {
+  height: 55%; /*dont change this */
+  width: 15%; /*dont change this */
+  position: absolute; /*dont change this */
+  background-color: transparent; /*dont change this */
+  margin-top: 50px;
+  /* border: 2px solid black; */
+  margin-left: 28%;
+}
+.photo-ju-luiz-container {
+  position: relative;
+  cursor: pointer;
+  justify-content: space-evenly;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #323B60;
+  font-weight: bold;
+  padding: 5px;
+}
 .juliana-photo {
   border-color: transparent;
   font-size: 14px;
@@ -80,25 +100,22 @@
   font-size: 14px;
   text-align: center;
   position: relative;
-  height: 110px;
-}
-
-.rachel-photo {
-  border-color: transparent;
-  font-size: 14px;
-  text-align: center;
-  position: relative;
+  margin-top: 50px;
   height: 110px;
 }
 
 .four-diamonds {
   border-color: transparent;
-  text-align: center;
-  position: relative;
-  height: 20px;
-  margin-left: -20;
+  height: 30px;
+  position: static;
+  margin-top: 12%;
+  margin-left: 10%;
 }
 
+.pink-dots {
+  margin-left: 1px;
+  margin-top: 35%;
+}
 .footer-container {
   width: 100%;
   height: 10%;

@@ -1,16 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
-import Navbar from '../Navbar/Navbar';
-import OurProjects from '../OurProjects/OurProjects';
-import ProfilePic from '../ProfilePic/ProfilePic';
 import './Home.css';
 
-import Josh from '../Josh/Josh';
-import Luiz from '../Luiz/Luiz';
-import Juliana from '../Juliana/Juliana';
-import Rachel from '../Rachel/Rachel';
-
+import Navbar from '../Navbar/Navbar';
+import OurProjects from '../OurProjects/OurProjects';
 import pinkDots from '../../images/pink-dots.png'
 import fourDiamonds from '../../images/four-diamonds.svg'
 
@@ -66,35 +60,31 @@ function Homepage() {
       </div>
 
       {showComponents && (
-        <div className='faces-buttons-container'>
-          <div className='individual-container'>
-            <img className='josh-photo' src={josh} onClick={() => handleClick('/josh')} />
-            <p>Josh</p>
+        <div className='team-container-one'>
+          <div className='.photo-josh-rachel-container'>
+            <img className='josh-photo' src={josh} alt='Joshs photo' onClick={() => handleClick('/josh')} />
+            <p style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Josh </p>
           </div>
 
-          <div className='individual-container'>
-            <img className='juliana-photo' src={juliana} onClick={() => handleClick('/juliana')} />
+          <div className='.photo-josh-rachel-container'>
+            <img className='rachel-photo' src={rachel} alt='Rachels photo' onClick={() => handleClick('/rachel')} />
+            <p style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Rachel </p>
+          </div>
+        </div>)}
+
+      {showComponents && (
+        <div className='team-container-two'>
+          <div className='photo-ju-luiz-container'>
+            <img className='juliana-photo' src={juliana} alt='Julianas photo' onClick={() => handleClick('/juliana')} />
             <p>Juliana</p>
           </div>
 
-          <div className='individual-container'>
-            <img className='luiz-photo' src={luiz} onClick={() => handleClick('/luiz')} />
+          <div className='photo-ju-luiz-container'>
+            <img className='luiz-photo' src={luiz} alt='Luizs photo' onClick={() => handleClick('/luiz')} />
             <p>Luiz</p>
           </div>
-
-          <div className='individual-container'>
-            <img className='rachel-photo' src={rachel} onClick={() => handleClick('/rachel')} />
-            <p>Rachel</p>
-          </div>
-
-          <div className='individual-container'>
-            <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
-          </div>
-          
-          <div className='pink-dots'>
-          <img style={{ width: 700, height: 75 }} src={pinkDots} alt='Pink dots line'/>
-        </div>
         </div>)}
+        
         
         <div className='text-container'>
           <p className='header'> Pensano Developers is a team of software engineers who are available to hire for job roles in the UK.</p>
@@ -107,8 +97,17 @@ function Homepage() {
       <div>
         {showOurProjects && <OurProjects />}
       </div>
+      
+      <div className='four-diamonds'>
+        <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
+      </div>
+
+      <div className='pink-dots'>
+          <img style={{ width: 800, height: 80 }} src={pinkDots} alt='Decorative line with pink dots'/>
+        </div>
 
       <div className='footer-container'>
+        
           <div>
             <button className='footer-text' onClick={() => handleClick('/our-projects')}>Check out our projects here.</button>
             <p></p>
