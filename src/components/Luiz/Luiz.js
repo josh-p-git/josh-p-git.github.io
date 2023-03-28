@@ -10,13 +10,19 @@ import House from '../personalInfo/House';
 import Linkedin from '../personalInfo/Linkedin';
 import Phone from '../personalInfo/Phone';
 import Git from '../personalInfo/Git';
+import CV from '../CV/CV';
 
-export default function Luiz({ handleCV, toggleComponents }) {
+export default function Luiz() {
 
   const [showPortfolio, setShowPortfolio] = useState(false)
+  const [showCV, setShowCV] = useState(false)
 
   const handlePortfolio = () => {
     setShowPortfolio(!showPortfolio)
+  }
+
+  const handleCV = () => {
+    setShowCV(!showCV)
   }
 
   return (
@@ -65,10 +71,11 @@ export default function Luiz({ handleCV, toggleComponents }) {
             }}>My Portfolio</button>
             
             <button className='buttons' onClick={() => {
-              console.log("hello CV")
+              handleCV()
             }}>My CV</button>
           </div>
           {showPortfolio ? <Portfolio /> : null}
+          {showCV ? <CV /> : null}
     </div>
   );
 }
