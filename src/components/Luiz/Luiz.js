@@ -32,9 +32,9 @@ export default function Luiz() {
 
   return (
     <Layout>
-      <div className='pageContainer'>
+      <div className='pageContainer-luiz'>
         <h1 className='name'>Luiz Santos</h1>
-          <div className='aboutContainer'>
+          <div className='aboutContainer-luiz'>
             <div className='profile-pic'>
               <ProfilePic imageProp={luiz} />
             </div>
@@ -53,20 +53,20 @@ export default function Luiz() {
               
             </div>
             
-            <div className='info-container'>
-              <Git
+            <div className='info-container-luiz'>
+              <Git className="infoLuiz"
                 git={"https://github.com/santosluizfelipe"}
                 />
-                <Linkedin
+                <Linkedin className="infoLuiz"
                 linkedin={"https://www.linkedin.com/in/luizfelipessantos/"}
                 />
-                <House className="info"
+                <House className="infoLuiz"
                 location={"London"}
                 />
-                <Phone className="info"
+                <Phone className="infoLuiz"
                 phone={"07940077958"}
                 />
-                <Email className="info"
+                <Email className="infoLuiz"
                 email={"luizfelipe0598@icloud.com"}
                 />
               </div>

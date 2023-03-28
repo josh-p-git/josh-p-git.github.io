@@ -1,12 +1,14 @@
 import './Navbar.css'
 import React from 'react'
-import logoNav from '../../images/logo-navbar.png'
+import { useNavigate } from "react-router-dom";
+import logoPensano from '../../images/logo-pensano.png'
+import makersLogo from '../../images/logo-makers.png'
 import { useState } from 'react' 
-// import PensanoDevs2 from '../images/PensanoDevs2.png'
 
 export default function Navbar({ handleOurProjects, toggleComponents }) {
 
     const [open, setOpen] = useState(false);
+    const [showComponents, setShowComponents] = useState(true)
 
     function DropdownMenu() {
         return (
@@ -20,25 +22,34 @@ export default function Navbar({ handleOurProjects, toggleComponents }) {
           </div>
         );
       }
-      
+    
+    const navigate = useNavigate();
+
+    function handleClick(path) {
+        navigate(path);
+      }
     
     return (
         <div className='navbar'>
-            <img src={logoNav} width='150' onClick={() => {
-                handleOurProjects(false)
-                toggleComponents(true)
+            <img src={logoPensano} width='150' onClick={() => {
+                handleClick('/')
             }}/> 
             <div className='team-container'>
-                <button className='button' onClick={() => setOpen(!open)}>The Team</button>
-                {open && DropdownMenu()}
+              <button className='button' onClick={() => setOpen(!open)}>The Team</button>
+              {open && DropdownMenu()}
             </div>
             <div className='our-projects'>
-                <button onClick={() => {
-                    handleOurProjects(true)
-                    toggleComponents(false)
-                }}>Our Projects</button>
-                <a href='https://makers.tech' target="_blank">Makers</a>
+              <button onClick={() => {
+                  handleOurProjects(true)
+                  toggleComponents(false)
+              }}>Our Projects</button>
             </div>
+            {showComponents && (
+              <div className='navbar-buttons'>
+                <a href='https://makers.tech' target="_blank">
+                  <img className='makers-logo' src={makersLogo} alt='Makers Academy logo'/>
+                  </a>
+              </div>)}
         </div>
         )
 }
