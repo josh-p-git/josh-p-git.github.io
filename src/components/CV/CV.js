@@ -1,10 +1,10 @@
 import React from "react";
-import logo from '../../images/logo-navbar.png';
 
-export default function CV() {
+export default function CV({pdf}) {
   return (
-    <div className="cv-container">
-      <img src={logo} />
+    <div className="cv-container" style= {{ marginTop: '50px'}}>
+      <embed src={pdf} type="application/pdf" width="100%" height="700px" />
     </div>
   );
 }
+
