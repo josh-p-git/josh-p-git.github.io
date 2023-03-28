@@ -1,17 +1,16 @@
 .pageContainer {
     padding: 22px;
-    padding-bottom: 36%;
-    background-color: #f7f7f7;
+    padding-bottom: 30%;
+    background-color: #CBE1E8;
     height: 100%;
   }
   
   .name {
-    font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    color: #052d49;
+    color: #16557B;
   }
   
   .aboutContainer {
@@ -20,16 +19,15 @@
     margin-right: 50px;
     display: flex;
     flex-direction: row;
+    background-color: #A6C7CB;
     border-radius: 20px;
-    background-color: #052d49;
   }
   .aboutText {
-    font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     font-size: 18px;
     text-align: justify;
     margin-right: 20px;
-    color: #ffffff;
+    color: #16557B;
   }
   
   .profile-pic {
@@ -55,7 +53,7 @@
   }
   
   .info-container {
-    margin-top: -3%;
+    /* margin-left: 30%; */
     display: flex;
     justify-content: space-evenly;
     font-size: 20px;
@@ -69,26 +67,17 @@
   }
   
   .buttons {
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    background-color: #052d49;
+    background-color: #A6C7CB;
     flex-direction: row;
     font-size: 18px;
-    color: #ffffff;
+    color: #16557B;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 10px;
+    border-color: #CBE1E8;
     margin-top: 30px;
-    border: none;
-  }
-
-  .buttons:active {
-    background-color: #ffffff;
-    color: #052d49;
-  }
-
-  .info {
-    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left:75px; */
   }

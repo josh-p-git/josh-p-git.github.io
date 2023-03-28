@@ -1,13 +1,68 @@
-import './Juliana.css'
+import '../profile-styling/profileStyling.css';
+import ProfilePic from '../ProfilePic/ProfilePic'
+import Ju from '../../images/Ju.svg'
 
-export default function Juliana({ handleJuliana }) {
-    return (
-        <div className="juliana-backdrop">
-            <div className="juliana-title">
-                <h1>Juliana</h1>
-                <p>Please give ju a job</p>
+import Layout from '../layout/layout';
+import Email from '../personalInfo/Email';
+import House from '../personalInfo/House';
+import Linkedin from '../personalInfo/Linkedin';
+import Phone from '../personalInfo/Phone';
+import Git from '../personalInfo/Git';
+
+export default function Juliana({ handlePortfolio, handleCV, toggleComponents }) {
+  return (
+    <Layout>
+      <div className='pageContainer'>
+        <h1 className='name'>Juliana Nocchi</h1>
+          <div className='aboutContainer'>
+            <div className='profile-pic'>
+              <ProfilePic imageProp={Ju} />
             </div>
-            <button onClick={handleJuliana} >Close</button>
-        </div>
-        )
+
+            <div>
+              <p className='aboutText'>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book. It has survived not
+              only five centuries, but also the leap into electronic typesetting,
+              remaining essentially
+              </p>
+              </div>
+
+              
+            </div>
+            
+            <div className='info-container'>
+              <Git
+                git={"https://github.com/junocchi"}
+                />
+                <Linkedin
+                linkedin={"https://www.linkedin.com/in/juliana-nocchi/"}
+                />
+                <House
+                location={"London"}
+                />
+                <Phone
+                phone={"07955599"}
+                />
+                <Email
+                email={"ju.nocchi@gmail.com"}
+                />
+              </div>
+
+            <div className='buttons-container'>
+              <button className='buttons' onClick={() => {
+                  handlePortfolio(true)
+                  toggleComponents(false)
+              }}>My Portfolio</button>
+              
+              <button className='buttons' onClick={() => {
+                  handleCV(true)
+                  toggleComponents(false)
+              }}>My CV</button>
+            </div>
+      </div>
+    </Layout>
+  );
 }

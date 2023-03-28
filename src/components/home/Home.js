@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
 import './Home.css';
+import Layout from '../layout/layout';
 
 import Navbar from '../Navbar/Navbar';
 import OurProjects from '../OurProjects/OurProjects';
@@ -54,6 +55,7 @@ function Homepage() {
   }
 
   return (
+  <Layout>
     <div className='page-container'>
       <div>
         <Navbar handleOurProjects={handleOurProjects} toggleComponents={toggleComponents}/>
@@ -116,6 +118,7 @@ function Homepage() {
           </div>
       </div>
     </div>
+  </Layout>
   );
 }
 
