@@ -36,7 +36,7 @@
 
 .team-container-one {
   height: 55%; /*dont change this */
-  width: 15%; /*dont change this */
+  width: 11%; /*dont change this */
   position: absolute; /*dont change this */
   background-color: transparent; /*dont change this */
   margin-left: 7%;
@@ -49,7 +49,6 @@
   background-color: transparent;
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding: 5px;
 }
 .josh-photo {
