@@ -1,18 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
-import Navbar from '../Navbar/Navbar';
-import OurProjects from '../OurProjects/OurProjects';
-import ProfilePic from '../ProfilePic/ProfilePic';
 import './Home.css';
 import Layout from '../layout/layout';
 
-import Josh from '../Josh/Josh';
-import Luiz from '../Luiz/Luiz';
-import Juliana from '../Juliana/Juliana';
-import Rachel from '../Rachel/Rachel';
-
-import pinkLine from '../../images/pink-line.svg'
+import Navbar from '../Navbar/Navbar';
+import OurProjects from '../OurProjects/OurProjects';
 import pinkDots from '../../images/pink-dots.png'
 import fourDiamonds from '../../images/four-diamonds.svg'
 
@@ -62,61 +55,70 @@ function Homepage() {
   }
 
   return (
-    <Layout>
-      <div className='page-container'>
-        {/* <div>
-          <Navbar handleOurProjects={handleOurProjects} toggleComponents={toggleComponents}/>
-        </div> */}
+  <Layout>
+    <div className='page-container'>
+      <div>
+        <Navbar handleOurProjects={handleOurProjects} toggleComponents={toggleComponents}/>
+      </div>
 
-        {showComponents && (
-          <div className='face-buttons-container'>
-            
-            <div className='face-buttons-box'>
-              <button className='face-button' onClick={() => handleClick('/josh')}><ProfilePic imageProp={josh} /></button>
-            </div>
-    
-            <div className='face-buttons-box'>
-              <button className='face-button' onClick={() => handleClick('/luiz')}><ProfilePic imageProp={luiz} /></button>
-            </div>
-    
-            <div className='four-diamonds'>
-            <img style={{ width: 150, height: 75 }} src={fourDiamonds} alt='Four diamonds'/>
-          </div>
-
-            <div className='face-buttons-box'>
-            <button className='face-button' onClick={() => handleClick('/juliana')}><ProfilePic imageProp={juliana} /></button>
-            </div>
-    
-            <div className='face-buttons-box'>
-            <button className='face-button' onClick={() => handleClick('/rachel')}><ProfilePic imageProp={rachel} /></button>
-            </div>
-            
-            <div className='pink-dots'>
-            <img style={{ width: 700, height: 75 }} src={pinkDots} alt='Pink dots line'/>
-          </div>
-          </div>)}
-          
-          <div className='text-container'>
-            <div>
-              <p className='header'> Pensano Developers is a team of software engineers who are available to hire for job roles in the UK.</p>
-              <div className='pink-line'></div>
-            </div>
-            <p className='text'> Pensano is Italian for they think; and the developers at Pensano Developers do just that: they are problem solvers, they think outside the box, and they are deliberate.</p>
-            <p className='text'> As graduates from Makers Academy, each is skilled at working in agile environments, test-driven development, object-oriented programming, and at quickly adapting to new tech stacks.</p>
-            <p className='text'> This site is designed to showcase our work both collectively, as Pensano Devs, and our individual projects. Please take a look around.</p>
+      {showComponents && (
+        <div className='team-container-one'>
+          <div className='.photo-josh-rachel-container'>
+            <img className='josh-photo' src={josh} alt='Joshs photo' onClick={() => handleClick('/josh')} />
+            <p onClick={() => handleClick('/josh')} style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Josh 
               
-          <div>
-            {showOurProjects && <OurProjects />}
+            </p>
           </div>
+
+          <div className='.photo-josh-rachel-container'>
+            <img className='rachel-photo' src={rachel} alt='Rachels photo' onClick={() => handleClick('/rachel')} />
+            <p onClick={() => handleClick('/rachel')} style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Rachel </p>
+          </div>
+        </div>)}
+
+      {showComponents && (
+        <div className='team-container-two'>
+          <div className='photo-ju-luiz-container'>
+            <img className='juliana-photo' src={juliana} alt='Julianas photo' onClick={() => handleClick('/juliana')} />
+            <p onClick={() => handleClick('/juliana')}>Juliana</p>
+          </div>
+
+          <div className='photo-ju-luiz-container'>
+            <img className='luiz-photo' src={luiz} alt='Luizs photo' onClick={() => handleClick('/luiz')} />
+            <p onClick={() => handleClick('/luiz')}>Luiz</p>
+          </div>
+        </div>)}
+        
+        
+        <div className='text-container'>
+          <p className='header'> Pensano Developers is a team of software engineers who are available to hire for job roles in the UK.</p>
+          <p className='pink-line'></p>
+          <p className='text'> Pensano is Italian for they think; and the developers at Pensano Developers do just that: they are problem solvers, they think outside the box, and they are deliberate.</p>
+          <p className='text'> As graduates from Makers Academy, each is skilled at working in agile environments, test-driven development, object-oriented programming, and at quickly adapting to new tech stacks.</p>
+          <p className='text'> This site is designed to showcase our work both collectively, as Pensano Devs, and our individual projects. Please take a look around.</p>
         </div>
+
+      <div>
+        {showOurProjects && <OurProjects />}
+      </div>
       
-        <div className='footer-container'>
-            <div>
-              <button className='footer-text' onClick={() => handleClick('/our-projects')}>Check out our projects here.</button>
-            </div>
+      <div className='four-diamonds-container'>
+        <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
+      
+        <div className='pink-dots'>
+          <img style={{ width: 800, height: 80 }} src={pinkDots} alt='Decorative line with pink dots'/>
         </div>
       </div>
-    </Layout>
+      
+      <div className='footer-container'>
+        
+          <div>
+            <button className='footer-text' onClick={() => handleClick('/our-projects')}>Check out our projects here.</button>
+            <p></p>
+          </div>
+      </div>
+    </div>
+  </Layout>
   );
 }
 
