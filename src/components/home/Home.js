@@ -63,12 +63,14 @@ function Homepage() {
         <div className='team-container-one'>
           <div className='.photo-josh-rachel-container'>
             <img className='josh-photo' src={josh} alt='Joshs photo' onClick={() => handleClick('/josh')} />
-            <p style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Josh </p>
+            <p onClick={() => handleClick('/josh')} style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Josh 
+              
+            </p>
           </div>
 
           <div className='.photo-josh-rachel-container'>
             <img className='rachel-photo' src={rachel} alt='Rachels photo' onClick={() => handleClick('/rachel')} />
-            <p style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Rachel </p>
+            <p onClick={() => handleClick('/rachel')} style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Rachel </p>
           </div>
         </div>)}
 
@@ -76,12 +78,12 @@ function Homepage() {
         <div className='team-container-two'>
           <div className='photo-ju-luiz-container'>
             <img className='juliana-photo' src={juliana} alt='Julianas photo' onClick={() => handleClick('/juliana')} />
-            <p>Juliana</p>
+            <p onClick={() => handleClick('/juliana')}>Juliana</p>
           </div>
 
           <div className='photo-ju-luiz-container'>
             <img className='luiz-photo' src={luiz} alt='Luizs photo' onClick={() => handleClick('/luiz')} />
-            <p>Luiz</p>
+            <p onClick={() => handleClick('/luiz')}>Luiz</p>
           </div>
         </div>)}
         
@@ -98,14 +100,14 @@ function Homepage() {
         {showOurProjects && <OurProjects />}
       </div>
       
-      <div className='four-diamonds'>
+      <div className='four-diamonds-container'>
         <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
-      </div>
-
-      <div className='pink-dots'>
+      
+        <div className='pink-dots'>
           <img style={{ width: 800, height: 80 }} src={pinkDots} alt='Decorative line with pink dots'/>
         </div>
-
+      </div>
+      
       <div className='footer-container'>
         
           <div>
