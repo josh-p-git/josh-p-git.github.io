@@ -66,35 +66,40 @@ function Homepage() {
       </div>
 
       {showComponents && (
-        <div className='faces-buttons-container'>
-          <div className='individual-container'>
-            <img className='josh-photo' src={josh} onClick={() => handleClick('/josh')} />
+        <div className='team-container-one'>
+          <div className='.photo-josh-rachel-container'>
+            <img className='josh-photo' src={josh} alt='Joshs photo' onClick={() => handleClick('/josh')} />
             <p>Josh</p>
           </div>
 
-          <div className='individual-container'>
-            <img className='juliana-photo' src={juliana} onClick={() => handleClick('/juliana')} />
+          <div className='.photo-josh-rachel-container'>
+            <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
+          </div>
+
+          <div className='.photo-josh-rachel-container'>
+            <img className='rachel-photo' src={rachel} alt='Rachels photo' onClick={() => handleClick('/rachel')} />
+            <p>Rachel</p>
+          </div>
+        </div>)}
+
+      {showComponents && (
+
+        <div className='team-container-two'>
+          <div className='photo-ju-luiz-container'>
+            <img className='juliana-photo' src={juliana} alt='Julianas photo' onClick={() => handleClick('/juliana')} />
             <p>Juliana</p>
           </div>
 
-          <div className='individual-container'>
-            <img className='luiz-photo' src={luiz} onClick={() => handleClick('/luiz')} />
-            <p>Luiz</p>
-          </div>
-
-          <div className='individual-container'>
-            <img className='rachel-photo' src={rachel} onClick={() => handleClick('/rachel')} />
-            <p>Rachel</p>
-          </div>
-
-          <div className='individual-container'>
+          <div className='photo-ju-luiz-container'>
             <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
           </div>
-          
-          <div className='pink-dots'>
-          <img style={{ width: 700, height: 75 }} src={pinkDots} alt='Pink dots line'/>
-        </div>
+
+          <div className='photo-ju-luiz-container'>
+            <img className='luiz-photo' src={luiz} alt='Luizs photo' onClick={() => handleClick('/luiz')} />
+            <p>Luiz</p>
+          </div>
         </div>)}
+        
         
         <div className='text-container'>
           <p className='header'> Pensano Developers is a team of software engineers who are available to hire for job roles in the UK.</p>
@@ -103,6 +108,9 @@ function Homepage() {
           <p className='text'> As graduates from Makers Academy, each is skilled at working in agile environments, test-driven development, object-oriented programming, and at quickly adapting to new tech stacks.</p>
           <p className='text'> This site is designed to showcase our work both collectively, as Pensano Devs, and our individual projects. Please take a look around.</p>
         </div>
+
+        {/* <div className='pink-dots'>
+          <img style={{ width: 700, height: 75 }} src={pinkDots} alt='Pink dots line'/> */}
 
       <div>
         {showOurProjects && <OurProjects />}

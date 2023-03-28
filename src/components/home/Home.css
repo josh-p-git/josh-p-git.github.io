@@ -39,16 +39,17 @@
   margin-left: 1%;
 }
 
-.faces-buttons-container {
-  height: 65%; /*dont change this */
-  width: 25%; /*dont change this */
+.team-container-one {
+  height: 50%; /*dont change this */
+  width: 15%; /*dont change this */
   position: absolute; /*dont change this */
   background-color: transparent; /*dont change this */
-  margin: 20px 10px 0px 70px; /*dont change this */
+  margin-left: 7%;
+  margin-top: 40px;
   /* border: 2px solid black; */
 }
 
-.individual-container {
+.photo-josh-rachel-container {
   position: relative;
   cursor: pointer;
   justify-content: space-evenly;
@@ -68,6 +69,27 @@
   height: 110px;
 }
 
+.team-container-two {
+  height: 50%; /*dont change this */
+  width: 15%; /*dont change this */
+  position: absolute; /*dont change this */
+  background-color: transparent; /*dont change this */
+  margin-top: 40px;
+  /* border: 2px solid black; */
+  margin-left: 28%;
+}
+.photo-ju-luiz-container {
+  position: relative;
+  cursor: pointer;
+  justify-content: space-evenly;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #323B60;
+  font-weight: bold;
+  padding: 5px;
+}
 .juliana-photo {
   border-color: transparent;
   font-size: 14px;
