@@ -1,12 +1,14 @@
 import './Navbar.css'
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import logoNav from '../../images/logo-navbar.png'
+import makersLogo from '../../images/logo-makers.png'
 import { useState } from 'react' 
-// import PensanoDevs2 from '../images/PensanoDevs2.png'
 
 export default function Navbar({ handleOurProjects, toggleComponents }) {
 
     const [open, setOpen] = useState(false);
+    const [showComponents, setShowComponents] = useState(true)
 
     function DropdownMenu() {
         return (
@@ -20,7 +22,12 @@ export default function Navbar({ handleOurProjects, toggleComponents }) {
           </div>
         );
       }
-      
+    
+    const navigate = useNavigate();
+
+    function handleClick(path) {
+        navigate(path);
+      }
     
     return (
         <div className='navbar'>
@@ -37,8 +44,13 @@ export default function Navbar({ handleOurProjects, toggleComponents }) {
                     handleOurProjects(true)
                     toggleComponents(false)
                 }}>Our Projects</button>
-                <a href='https://makers.tech' target="_blank">Makers</a>
             </div>
+            {showComponents && (
+              <div className='navbar-button'>
+                <a href='https://makers.tech' target="_blank">
+                  <img className='makers-logo' src={makersLogo} alt='Makers Academy'/>
+                  </a>
+              </div>)}
         </div>
         )
 }
