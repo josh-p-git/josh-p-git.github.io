@@ -8,7 +8,7 @@ import makersLogo from '../../images/logo-makers.png'
 import OurProjects from '../OurProjects/OurProjects';
 import pinkDots from '../../images/pink-dots.png'
 import fourDiamonds from '../../images/four-diamonds.svg'
-
+import makersLogo from '../../images/logo-makers.png'
 import josh from '../../images/Josh.svg'
 import luiz from '../../images/Luiz.svg'
 import juliana from '../../images/Ju.svg'
@@ -57,34 +57,37 @@ function Homepage() {
   return (
   <Layout>
     <div className='page-container'>
-      {showComponents && (
-        <div className='team-container-one'>
-          <div className='.photo-josh-rachel-container'>
-            <img className='josh-photo' src={josh} alt='Joshs photo' onClick={() => handleClick('/josh')} />
-            <p onClick={() => handleClick('/josh')} style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Josh 
-              
-            </p>
-          </div>
+      
+      <div className='all-photos-container'>
+        
+        {showComponents && (
+          <div className='team-container-one'>
+            <div className='photo-josh-rachel-container'>
+              <img className='josh-photo' src={josh} alt='Joshs photo' onClick={() => handleClick('/josh')} />
+              <p onClick={() => handleClick('/josh')}>Josh 
+                
+              </p>
+            </div>
 
-          <div className='.photo-josh-rachel-container'>
+          <div className='photo-josh-rachel-container'>
             <img className='rachel-photo' src={rachel} alt='Rachels photo' onClick={() => handleClick('/rachel')} />
-            <p onClick={() => handleClick('/rachel')} style={{ color: '#323B60', fontWeight: 'bold', cursor: 'pointer', textAlign: 'center' }}>Rachel </p>
+            <p onClick={() => handleClick('/rachel')} >Rachel </p>
           </div>
         </div>)}
 
-      {showComponents && (
-        <div className='team-container-two'>
-          <div className='photo-ju-luiz-container'>
-            <img className='juliana-photo' src={juliana} alt='Julianas photo' onClick={() => handleClick('/juliana')} />
-            <p onClick={() => handleClick('/juliana')}>Juliana</p>
-          </div>
+        {showComponents && (
+          <div className='team-container-two'>
+            <div className='photo-ju-luiz-container'>
+              <img className='juliana-photo' src={juliana} alt='Julianas photo' onClick={() => handleClick('/juliana')} />
+              <p onClick={() => handleClick('/juliana')}>Juliana</p>
+            </div>
 
           <div className='photo-ju-luiz-container'>
             <img className='luiz-photo' src={luiz} alt='Luizs photo' onClick={() => handleClick('/luiz')} />
             <p onClick={() => handleClick('/luiz')}>Luiz</p>
           </div>
         </div>)}
-        
+      </div>  
         
         <div className='text-container'>
           <p className='header'> Pensano Developers is a team of software engineers who are available to hire for job roles in the UK.</p>
@@ -110,6 +113,7 @@ function Homepage() {
         
           <div>
             <button className='footer-text' onClick={() => handleClick('/our-projects')}>Check out our projects here.</button>
+
             <div className='makers-logo-container'>
               <p>We studied at:</p>
             <a href='https://makers.tech' target="_blank">

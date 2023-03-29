@@ -2,7 +2,6 @@ import './Navbar.css'
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import logoPensano from '../../images/logo-pensano.png'
-import makersLogo from '../../images/logo-makers.png'
 import { useState } from 'react' 
 
 export default function Navbar({ handleOurProjects, toggleComponents }) {
