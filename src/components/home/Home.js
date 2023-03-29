@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import './Home.css';
 import Layout from '../layout/layout';
 
-import makersLogo from '../../images/logo-makers.png'
 import OurProjects from '../OurProjects/OurProjects';
 import pinkDots from '../../images/pink-dots.png'
 import fourDiamonds from '../../images/four-diamonds.svg'
