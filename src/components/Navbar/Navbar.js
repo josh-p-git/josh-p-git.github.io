@@ -44,12 +44,6 @@ export default function Navbar({ handleOurProjects, toggleComponents }) {
                   toggleComponents(false)
               }}>Our Projects</button>
             </div>
-            {showComponents && (
-              <div className='navbar-buttons'>
-                <a href='https://makers.tech' target="_blank">
-                  <img className='makers-logo' src={makersLogo} alt='Makers Academy logo'/>
-                  </a>
-              </div>)}
         </div>
         )
 }
