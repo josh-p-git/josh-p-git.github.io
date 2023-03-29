@@ -155,6 +155,19 @@
   cursor: pointer;
 }
 
+
+.makers-logo-container {
+  display: flex;
+  justify-content: end;
+  margin-top: -1%;
+}
+
+.makers-logo-container p {
+  font-size: 11px;
+  margin-top: -2%;
+  font-weight: bold;
+  margin-right: -7%;
+
 .navbar button { /*The Team and Our Projects buttons*/
   margin-right: 15px;
   background-color: #a7d4e1;
@@ -172,4 +185,5 @@
   height: 40px;
   /* border: 2px solid black ; */
   margin-right: 20px;
+
 }

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import './Home.css';
 import Layout from '../layout/layout';
 
-import Navbar from '../Navbar/Navbar';
+import makersLogo from '../../images/logo-makers.png'
 import OurProjects from '../OurProjects/OurProjects';
 import pinkDots from '../../images/pink-dots.png'
 import fourDiamonds from '../../images/four-diamonds.svg'
@@ -113,12 +113,13 @@ function Homepage() {
         
           <div>
             <button className='footer-text' onClick={() => handleClick('/our-projects')}>Check out our projects here.</button>
-            {showComponents && (
-              <div className='navbar-buttons'>
-                <a href='https://makers.tech' target="_blank">
-                  <img className='makers-logo' src={makersLogo} alt='Makers Academy logo'/>
-                  </a>
-              </div>)}
+
+            <div className='makers-logo-container'>
+              <p>We studied at:</p>
+            <a href='https://makers.tech' target="_blank">
+                <img className='makers-logo' src={makersLogo} alt='Makers Academy logo'/>
+            </a>
+            </div>
           </div>
       </div>
     </div>
