@@ -143,3 +143,16 @@
   color: #323B60;
   cursor: pointer;
 }
+
+.makers-logo-container {
+  display: flex;
+  justify-content: end;
+  margin-top: -1%;
+}
+
+.makers-logo-container p {
+  font-size: 11px;
+  margin-top: -2%;
+  font-weight: bold;
+  margin-right: -7%;
+}
