@@ -2,6 +2,31 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .text-container {
+    bottom: auto;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .team-container-one {
+    /* height: 55%; dont change this */
+    width: 50%; /*dont change this */
+    position: relative; /*dont change this */
+    background-color: transparent; /*dont change this */
+    margin-left: 7%;
+    /* margin-top: 50px; */
+    /* border: 2px solid black; */
+  }
+}
+
+
+
+
 .text-container {
   height: 80%;
   width: 50%;
