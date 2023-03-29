@@ -41,12 +41,13 @@ export default function Luiz() {
 
             <div>
               <p className='aboutText'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic typesetting,
-              remaining essentially
+              Hi, I'm Luiz! I'm a Brazilian junior full-stack software engineer
+              living in London. I've completed an internship at the legal
+              consulting start-up LawAdvisor and recently graduated from the
+              full-stack bootcamp Makers Academy.
+              During my internship at LawAdvisor, I primarily used Elixir and
+              Phoenix, but I feel comfortable working with JavaScript/React and
+              Ruby/Rails.
               </p>
               </div>
 
