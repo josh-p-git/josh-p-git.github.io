@@ -115,18 +115,26 @@
 }
 
 .four-diamonds-container {
-  position: absolute;
+  /* position: absolute;
   top: 44%;
   left: 17%;
+  display: flex;
+  z-index: -1; */
+  position: absolute;
+  top: 45%;
+  left: 19%;
   display: flex;
   z-index: -1;
 }
 .four-diamonds {
   border-color: transparent;
   height: 30px; 
-  position: absolute;
+  /* position: absolute;
   margin-top: -11%;
-  margin-left: 9%;
+  margin-left: 9%; */
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 1%;
 }
 .pink-dots {
   margin-top: 30%;
@@ -152,19 +160,6 @@
   cursor: pointer;
 }
 
-
-.makers-logo-container {
-  display: flex;
-  justify-content: end;
-  margin-top: -1%;
-}
-
-.makers-logo-container p {
-  font-size: 15px;
-  margin-top: 23px;
-  font-weight: medium;
-  margin-right: 5px;
-}
 .navbar button { /*The Team and Our Projects buttons*/
   margin-right: 15px;
   background-color: #a7d4e1;
@@ -178,9 +173,22 @@
   border: none;
 }
 
+.makers-logo-container {
+  display: flex;
+  justify-content: end;
+  margin-top: -1%;
+  
+}
+/* We studied at*/
+.makers-logo-container p { 
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: medium;
+  margin-right: 5px;
+}
 .makers-logo {
   height: 40px;
   /* border: 2px solid black ; */
-  margin-right: 20px;
-
+  margin-right: 45px;
+  margin-top: -20px;
 }
