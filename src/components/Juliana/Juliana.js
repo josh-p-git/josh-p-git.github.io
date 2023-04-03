@@ -46,8 +46,8 @@ export default function Juliana() {
               and frameworks, including NodeJS and ExpressJS; database management 
               systems, such as PostgreSQL and MongoDB; and version control to 
               collaborate effectively with other developers on large-scale projects.
-              I value continuous learning (curently working my way through C# and Phyton) 
-              and I am passionate about building strong relationships.
+              I am passionate about building strong relationships and I value
+              continuous learning (curently working my way through C# and Phyton).
               </p>
               </div>
 
