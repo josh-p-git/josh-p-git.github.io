@@ -15,6 +15,7 @@
   }
   
   .aboutContainer-luiz {
+    line-height: 1.5;
     margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
@@ -93,4 +94,8 @@
   .infoLuiz {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+  }
+
+  .git-emoticon {
+    
   }
