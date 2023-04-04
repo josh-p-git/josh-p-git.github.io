@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './Juliana.css'
 import ProfilePic from '../ProfilePic/ProfilePic'
-import JulianaCV from '../../images/CVJuliana.pdf';
+import JulianaCV from '../../images/JuImagesAndVideos/CVJuliana.pdf';
 import Ju from '../../images/Ju.svg'
 
 import Layout from '../layout/layout';
@@ -40,17 +40,17 @@ export default function Juliana() {
 
             <div>
               <p className='aboutTextJu'>
-              I am a career changer junior software engineer with experience in 
-              front end languages and frameworks such as HTML, CSS, JavaScript, React, 
-              and React Native to create stunning user interfaces; back end technologies 
-              and frameworks, including NodeJS and ExpressJS; database management 
-              systems, such as PostgreSQL and MongoDB; and version control to 
-              collaborate effectively with other developers on large-scale projects.
-              I am passionate about building strong relationships and I value
-              continuous learning (curently working my way through C# and Phyton).
+              👩🏻‍💻 I am a Makers graduate Software Engineer with a background in Animation and HR. 
+              I am a positive, methodical and highly organised person who values continuous learning. I am also 
+              passionate about building strong relationships and believe that collaboration, communication, 
+              and respect are essential for any successful project.
+              <br></br>
+              <p style={{ fontSize: 14 }}>
+              ⚙️ Tech Skills: C#, HTML, CSS, Ruby, JavaScript, React, React Native, NodeJS, ExpressJS, Expo Go, 
+              PostgreSQL, MongoDB, Jest, Cypress, Git and GitHub
+              </p>
               </p>
               </div>
-
               
             </div>
             
@@ -63,9 +63,6 @@ export default function Juliana() {
                 />
                 <House
                 location={"London"}
-                />
-                <Phone
-                phone={"07955599"}
                 />
                 <Email
                 email={"junocchi@gmail.com"}
