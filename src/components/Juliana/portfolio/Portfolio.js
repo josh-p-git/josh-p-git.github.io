@@ -8,7 +8,7 @@ import stepvideo from '../../../images/LuizImagesAndVideos/StepFreeGig.mp4'
 export default function Portfolio() {
   return (
     <IconContext.Provider
-      value={{ color: 'white', size: '30px'}}>
+      value={{ color: '#052d49', size: '30px'}}>
       
 {/* Project Solved */}
       <div className="all-projects-containerJu">
@@ -32,7 +32,7 @@ export default function Portfolio() {
         </div>
         <div className="git-emoticon-container">
           <div className="git-child">
-          <Git  git="https://github.com/santosluizfelipe/StepFreeGigs" />
+          <Git  git="https://github.com/junocchi/Solved-App" />
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default function Portfolio() {
           <img className="gif" src={stepvideo} />
         </div>
         <div className="project-text">
-        <h3>Acebook</h3>
+        <h3>Acebook Air</h3>
           <p>In this project, eight of us were tasked with working on an existing MERN 
             application with only the most basic signup, login and logout functions in place 
             and minimal other functionality. The challenge was to familiarise ourselves with an 
@@ -58,7 +58,7 @@ export default function Portfolio() {
         </div>
         <div className="git-emoticon-container">
           <div className="git-child">
-            <Git  git="https://github.com/santosluizfelipe/StepFreeGigs" />
+            <Git  git="https://github.com/junocchi/Acebook-Air" />
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ export default function Portfolio() {
           </div>
           <div className="git-emoticon-container">
             <div className="git-child">
-            <Git  git="https://github.com/santosluizfelipe/StepFreeGigs" />
+            <Git  git="https://github.com/junocchi/Makers-BnB" />
             </div>
         </div>
       </div>
