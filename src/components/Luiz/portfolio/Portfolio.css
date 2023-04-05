@@ -7,8 +7,9 @@
   justify-content: start;
   border-radius: 20px;
   background-color: #052d49;
-  position: absolute;
+
 }
+
 
 .gif-container {
   padding: 20px;
@@ -31,6 +32,7 @@
   text-align: justify;
   justify-content: end;
   color: #ffffff;
+  margin-right: 20px;
   
 }
 
@@ -38,7 +40,7 @@
   width: 1px;
   height: 1px;
   justify-content: flex-end;
-  margin-top: 12%;
+  margin-top: 18%;
   margin-left: 0px;
 
 }
@@ -53,3 +55,4 @@
   height: 100%;
   
 }
+

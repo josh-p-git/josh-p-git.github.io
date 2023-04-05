@@ -4,10 +4,10 @@ import './Luiz.css'
 import ProfilePic from '../ProfilePic/ProfilePic'
 import luizcv from '../../images/LuizCV.pdf';
 import luiz from '../../images/Luiz.svg'
-import stepvideo from '../../images/LuizImagesAndVideos/StepFreeGig.mp4'
+
 
 import Layout from '../layout/layout';
-import Portfolio from '../portfolio/Portfolio';
+import Portfolio from './portfolio/Portfolio';
 import Email from '../personalInfo/Email';
 import House from '../personalInfo/House';
 import Linkedin from '../personalInfo/Linkedin';
@@ -86,7 +86,9 @@ export default function Luiz() {
                 handleCV()
               }}>My CV</button>
             </div>
-            {showPortfolio ? <Portfolio gif={stepvideo} content={content} link={link} />  : null}
+            {showPortfolio ?
+              <Portfolio />
+                : null}
             {showCV ? <CV pdf={luizcv}/> : null}
       </div>
     </Layout>
