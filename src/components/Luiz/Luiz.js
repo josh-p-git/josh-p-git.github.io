@@ -4,6 +4,7 @@ import './Luiz.css'
 import ProfilePic from '../ProfilePic/ProfilePic'
 import luizcv from '../../images/LuizCV.pdf';
 import luiz from '../../images/Luiz.svg'
+import stepgif from '../../images/stepfreegigs.gif'
 
 import Layout from '../layout/layout';
 import Portfolio from '../portfolio/Portfolio';
@@ -16,6 +17,10 @@ import CV from '../CV/CV';
 
 
 export default function Luiz() {
+
+  const content = "A mobile app for finding wheelchair accessible gigs in London with step-free navigation. Tech used: React Native, Expo, Node.js, Express.js, Jest"
+  const link = "https://github.com/santosluizfelipe/StepFreeGigs"
+
 
   const [showPortfolio, setShowPortfolio] = useState(false)
   const [showCV, setShowCV] = useState(false)
@@ -81,7 +86,7 @@ export default function Luiz() {
                 handleCV()
               }}>My CV</button>
             </div>
-            {showPortfolio ? <Portfolio />  : null}
+            {showPortfolio ? <Portfolio gif={stepgif} content={content} link={link} />  : null}
             {showCV ? <CV pdf={luizcv}/> : null}
       </div>
     </Layout>
