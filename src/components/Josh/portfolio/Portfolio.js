@@ -3,7 +3,7 @@ import './Portfolio.css'
 import { IconContext } from 'react-icons';
 
 import Git from '../../personalInfo/Git';
-import construction from '../../../images/JoshImagesAndVideos/gif-in-construction.gif'
+import construction from '../../../images/JoshImagesAndVideos/gif-construction.gif'
 
 export default function Portfolio() {
   return (

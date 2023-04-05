@@ -1,67 +1,83 @@
-import '../profile-styling/profileStyling.css';
+import React from 'react';
+import { useState } from 'react';
+import './Josh.css'
 import ProfilePic from '../ProfilePic/ProfilePic'
+import ComingSoon from '../../images/JoshImagesAndVideos/coming-soon.pdf';
 import josh from '../../images/Josh.svg'
 
 import Layout from '../layout/layout';
+import Portfolio from './portfolio/Portfolio';
 import Email from '../personalInfo/Email';
 import House from '../personalInfo/House';
-import Linkedin from '../personalInfo/Linkedin';
-import Phone from '../personalInfo/Phone';
 import Git from '../personalInfo/Git';
+import CV from '../CV/CV';
 
-export default function Josh({ handlePortfolio, handleCV, toggleComponents }) {
+
+export default function Josh() {
+  
+  const [showPortfolio, setShowPortfolio] = useState(false)
+  const [showCV, setShowCV] = useState(false)
+
+  const handlePortfolio = () => {
+    setShowPortfolio(!showPortfolio)
+    setShowCV(false)
+  }
+
+  const handleCV = () => {
+    setShowCV(!showCV)
+    setShowPortfolio(false)
+  }
+
   return (
     <Layout>
-      <div className='pageContainer'>
+      <div className='pageContainerJosh'>
         <h1 className='name'>Josh Penney</h1>
-          <div className='aboutContainer'>
-            <div className='profile-pic'>
-              <ProfilePic imageProp={josh} />
+          <div className='aboutContainerJosh'>
+            <div className='profile-picJosh'>
+              <ProfilePic imageProp={josh}/>
             </div>
 
             <div>
-              <p className='aboutText'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic typesetting,
-              remaining essentially
+              <p className='aboutTextJosh'>
+              I'm a Software Engineer, Makers graduate, with experience in Social Care.
+              My combination of technical and social skills makes me a well-rounded professional, 
+              capable of adapting to different environments and working effectively 
+              with a variety of people.
+              <br></br>
+                <p style={{ fontSize: 14 }}>
+                ⚙️ Tech Skills: HTML, CSS, Ruby, JavaScript, React, React Native, NodeJS, ExpressJS, 
+                PostgreSQL, Jest, Cypress, Git and GitHub
+                </p>
               </p>
-              </div>
-
-              
             </div>
-            
+          </div>
+
             <div className='info-container'>
               <Git
                 git={"https://github.com/josh-p-git"}
                 />
-                <Linkedin
-                linkedin={"https://www.linkedin.com/in/jpenneynl/"}
-                />
                 <House
                 location={"Southampton"}
-                />
-                <Phone
-                phone={"072194321"}
                 />
                 <Email
                 email={"josh.penney@gmail.com"}
                 />
               </div>
 
-            <div className='buttons-container'>
-              <button className='buttons' onClick={() => {
-                  handlePortfolio(true)
-                  toggleComponents(false)
-              }}>My Portfolio</button>
-              
-              <button className='buttons' onClick={() => {
-                  handleCV(true)
-                  toggleComponents(false)
-              }}>My CV</button>
-            </div>
+              <div className='buttons-container'>
+            <button className='buttons' onClick={() => {
+                handlePortfolio()
+            }}>My Portfolio</button>
+            
+            <button className='buttons' onClick={() => {
+              handleCV()
+            }}>My CV</button>
+          </div>
+          
+            {showPortfolio ? 
+            <Portfolio />  
+              : null}
+            {showCV ? <CV pdf={ComingSoon}/> : null}
       </div>
     </Layout>
   );
