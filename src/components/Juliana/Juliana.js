@@ -6,11 +6,10 @@ import JulianaCV from '../../images/JuImagesAndVideos/CVJuliana.pdf';
 import Ju from '../../images/Ju.svg'
 
 import Layout from '../layout/layout';
-import Portfolio from './Portfolio';
+import Portfolio from './portfolio/Portfolio';
 import Email from '../personalInfo/Email';
 import House from '../personalInfo/House';
 import Linkedin from '../personalInfo/Linkedin';
-import Phone from '../personalInfo/Phone';
 import Git from '../personalInfo/Git';
 import CV from '../CV/CV';
 
@@ -37,7 +36,7 @@ export default function Juliana() {
             <div className='profile-pic'>
               <ProfilePic imageProp={Ju} />
             </div>
-
+            
             <div>
               <p className='aboutTextJu'>
               👩🏻‍💻 I am a Makers graduate Software Engineer with a background in Animation and HR. 
@@ -50,35 +49,37 @@ export default function Juliana() {
               PostgreSQL, MongoDB, Jest, Cypress, Git and GitHub
               </p>
               </p>
-              </div>
-              
             </div>
+          </div>
             
-            <div className='info-containerJu'>
-              <Git
-                git={"https://github.com/junocchi"}
-                />
-                <Linkedin
-                linkedin={"https://www.linkedin.com/in/juliana-nocchi/"}
-                />
-                <House
-                location={"London"}
-                />
-                <Email
-                email={"junocchi@gmail.com"}
-                />
-              </div>
+          <div className='info-containerJu'>
+            <Git
+              git={"https://github.com/junocchi"}
+              />
+            <Linkedin
+              linkedin={"https://www.linkedin.com/in/juliana-nocchi/"}
+              />
+            <House
+              location={"London"}
+              />
+            <Email
+              email={"junocchi@gmail.com"}
+              />
+          </div>
 
-              <div className='buttons-container'>
-              <button className='buttons' onClick={() => {
-                  handlePortfolio()
-              }}>My Portfolio</button>
-              
-              <button className='buttons' onClick={() => {
-                handleCV()
-              }}>My CV</button>
-            </div>
-            {showPortfolio ? <Portfolio />  : null}
+          <div className='buttons-container'>
+            <button className='buttons' onClick={() => {
+                handlePortfolio()
+            }}>My Portfolio</button>
+            
+            <button className='buttons' onClick={() => {
+              handleCV()
+            }}>My CV</button>
+          </div>
+          
+            {showPortfolio ? 
+            <Portfolio />  
+              : null}
             {showCV ? <CV pdf={JulianaCV}/> : null}
       </div>
     </Layout>
