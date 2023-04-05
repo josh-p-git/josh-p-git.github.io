@@ -27,4 +27,3 @@ export default function Portfolio({ gif, content, link }) {
     </IconContext.Provider>
   );
 }
-
