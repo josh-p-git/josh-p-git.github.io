@@ -19,10 +19,10 @@ export default function Portfolio() {
         <div className="project-text">
           <h3>Solved</h3>
           <p>This mobile app consists of a live-action treasure hunting with clues 
-            to help the user to search for five secret London landmarks. I was 
-            involved in the ideation, designing the user Interface and images, 
-            prototyping the screens, implementing functionalities on the front end, 
-            data manipulation, integration testing and styling.
+            to help the user to search for five secret London landmarks. As part of a
+            group of 5, I was involved in the ideation, designing the user 
+            interface and images, prototyping the screens, implementing functionalities 
+            on the front end, data manipulation, integration testing and styling.
             <br></br>
             <p style={{ fontSize: 14 }}> 
             ⚙️ Tech used: Node.js, Express, MongoDB Atlas, React Native, Expo Go 
@@ -63,15 +63,15 @@ export default function Portfolio() {
         </div>
       </div>
 
-{/* Project Makers B&B */}
+{/* Project Makers BnB */}
       <div className="all-projects-containerJu">
         <div className="gif-container">
           <img className="gif" src={stepvideo} />
         </div>
           <div className="project-text">
-          <h3>Makers-BnB</h3>
-            <p>As an Airbnb clone, with Cloud BnB you can register, login, list your 
-              properties for rent, browse the listed properties, view the availability 
+          <h3>Cloud BnB</h3>
+            <p>As an Airbnb clone, the six of us develop Cloud BnB is a week.
+              Users can register, login, list their properties for rent, browse the listed properties, view the availability 
               of properties, and submit booking requests.
             <br></br>
               <p style={{ fontSize: 14 }}> 
@@ -81,7 +81,29 @@ export default function Portfolio() {
           </div>
           <div className="git-emoticon-container">
             <div className="git-child">
-            <Git  git="https://github.com/junocchi/Makers-BnB" />
+            <Git  git="https://github.com/junocchi/Cloud-BnB" />
+            </div>
+        </div>
+      </div>
+
+{/* Project Bowling Scorecard Program */}
+<div className="all-projects-containerJu">
+        <div className="gif-container">
+          <img className="gif" src={stepvideo} />
+        </div>
+          <div className="project-text">
+          <h3>Bowling Scorecard</h3>
+            <p>This individual challenge consists of a Bowling Scorecard program that counts and sums the scores of a bowling 
+              game, including strikes and spares.
+            <br></br>
+              <p style={{ fontSize: 14 }}> 
+              ⚙️ Tech used: Ruby and RSpec 
+              </p>
+            </p>
+          </div>
+          <div className="git-emoticon-container">
+            <div className="git-child">
+            <Git  git="https://github.com/junocchi/Bowling-Scorecard-Ruby" />
             </div>
         </div>
       </div>
