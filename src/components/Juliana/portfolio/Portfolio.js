@@ -3,7 +3,11 @@ import './Portfolio.css'
 import { IconContext } from 'react-icons';
 
 import Git from '../../personalInfo/Git';
-import stepvideo from '../../../images/LuizImagesAndVideos/StepFreeGig.mp4'
+import gifSolved from '../../../images/JuImagesAndVideos/gif-Solved.gif'
+import Bowling from '../../../images/JuImagesAndVideos/bowling.png'
+import bank from '../../../images/JuImagesAndVideos/bank.png'
+import CloudBnB from '../../../images/JuImagesAndVideos/CloudBnB.png'
+import AcebookAir from '../../../images/JuImagesAndVideos/gif-AcebookAir.gif'
 
 export default function Portfolio() {
   return (
@@ -13,7 +17,7 @@ export default function Portfolio() {
 {/* Project Solved */}
       <div className="all-projects-containerJu">
         <div className="gif-container">
-          <img className="gif" src={stepvideo} />
+          <img className="gif" src={gifSolved} />
         </div>
 
         <div className="project-text">
@@ -30,9 +34,9 @@ export default function Portfolio() {
             </p>
           </p>
         </div>
-        <div className="git-emoticon-container">
-          <div className="git-child">
-          <Git  git="https://github.com/junocchi/Solved-App" />
+        <div className="github-emoticon-container">
+          <div className="github-child">
+            <Git  git="https://github.com/junocchi/Solved-App" />
           </div>
         </div>
       </div>
@@ -40,7 +44,7 @@ export default function Portfolio() {
 {/* Project Acebook */}
       <div className="all-projects-containerJu">
         <div className="gif-container">
-          <img className="gif" src={stepvideo} />
+          <img className="gif" src={AcebookAir} />
         </div>
         <div className="project-text">
         <h3>Acebook Air</h3>
@@ -56,8 +60,8 @@ export default function Portfolio() {
             </p>
           </p>
         </div>
-        <div className="git-emoticon-container">
-          <div className="git-child">
+        <div className="github-emoticon-container">
+          <div className="github-child">
             <Git  git="https://github.com/junocchi/Acebook-Air" />
           </div>
         </div>
@@ -66,7 +70,7 @@ export default function Portfolio() {
 {/* Project Makers BnB */}
       <div className="all-projects-containerJu">
         <div className="gif-container">
-          <img className="gif" src={stepvideo} />
+          <img className="gif" src={CloudBnB} />
         </div>
           <div className="project-text">
           <h3>Cloud BnB</h3>
@@ -79,9 +83,9 @@ export default function Portfolio() {
               </p>
             </p>
           </div>
-          <div className="git-emoticon-container">
-            <div className="git-child">
-            <Git  git="https://github.com/junocchi/Cloud-BnB" />
+          <div className="github-emoticon-container">
+            <div className="github-child">
+              <Git  git="https://github.com/junocchi/Cloud-BnB" />
             </div>
         </div>
       </div>
@@ -89,7 +93,7 @@ export default function Portfolio() {
 {/* Project Bowling Scorecard Program */}
 <div className="all-projects-containerJu">
         <div className="gif-container">
-          <img className="gif" src={stepvideo} />
+          <img className="gif" src={Bowling} />
         </div>
           <div className="project-text">
           <h3>Bowling Scorecard</h3>
@@ -101,9 +105,32 @@ export default function Portfolio() {
               </p>
             </p>
           </div>
-          <div className="git-emoticon-container">
-            <div className="git-child">
-            <Git  git="https://github.com/junocchi/Bowling-Scorecard-Ruby" />
+          <div className="github-emoticon-container">
+            <div className="github-child">
+              <Git  git="https://github.com/junocchi/Bowling-Scorecard-Ruby" />
+            </div>
+        </div>
+      </div>
+
+{/* Project Bank Account Program */}
+<div className="all-projects-containerJu">
+        <div className="gif-container">
+          <img className="gif" src={bank} />
+        </div>
+          <div className="project-text">
+          <h3>Bank Account</h3>
+            <p>This bank account program accepts deposits, withdraws and prints 
+              statements including the transactions date, type, amount and balance.
+              
+            <br></br>
+              <p style={{ fontSize: 14 }}> 
+              ⚙️ Tech used: Ruby and RSpec 
+              </p>
+            </p>
+          </div>
+          <div className="github-emoticon-container">
+            <div className="github-child">
+            <Git  git="https://github.com/junocchi/bank_account_tech_test" />
             </div>
         </div>
       </div>

@@ -44,10 +44,10 @@ export default function Juliana() {
               passionate about building strong relationships and believe that collaboration, communication, 
               and respect are essential for any successful project.
               <br></br>
-              <p style={{ fontSize: 14 }}>
-              ⚙️ Tech Skills: C#, HTML, CSS, Ruby, JavaScript, React, React Native, NodeJS, ExpressJS, Expo Go, 
-              PostgreSQL, MongoDB, Jest, Cypress, Git and GitHub
-              </p>
+                <p style={{ fontSize: 14 }}>
+                ⚙️ Tech Skills: C#, HTML, CSS, Ruby, JavaScript, React, React Native, NodeJS, ExpressJS, Expo Go, 
+                PostgreSQL, MongoDB, Jest, Cypress, Git and GitHub
+                </p>
               </p>
             </div>
           </div>
