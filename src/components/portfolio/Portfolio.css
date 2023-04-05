@@ -13,10 +13,12 @@
 .gif-container {
   padding: 20px;
   border-radius: 25px;
+  height: 200px;
+  width: 150px;
 }
 .gif {
-  height: 150px;
-  border-radius: 25px;
+  height: 180px;
+  width: 120px;
 }
 
 .project-text {

@@ -4,7 +4,7 @@ import './Luiz.css'
 import ProfilePic from '../ProfilePic/ProfilePic'
 import luizcv from '../../images/LuizCV.pdf';
 import luiz from '../../images/Luiz.svg'
-import stepgif from '../../images/stepfreegigs.gif'
+import stepvideo from '../../images/LuizImagesAndVideos/StepFreeGig.mp4'
 
 import Layout from '../layout/layout';
 import Portfolio from '../portfolio/Portfolio';
@@ -86,7 +86,7 @@ export default function Luiz() {
                 handleCV()
               }}>My CV</button>
             </div>
-            {showPortfolio ? <Portfolio gif={stepgif} content={content} link={link} />  : null}
+            {showPortfolio ? <Portfolio gif={stepvideo} content={content} link={link} />  : null}
             {showCV ? <CV pdf={luizcv}/> : null}
       </div>
     </Layout>
