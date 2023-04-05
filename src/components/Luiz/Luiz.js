@@ -6,7 +6,7 @@ import luizcv from '../../images/LuizCV.pdf';
 import luiz from '../../images/Luiz.svg'
 
 import Layout from '../layout/layout';
-import Portfolio from './Portfolio';
+import Portfolio from '../portfolio/Portfolio';
 import Email from '../personalInfo/Email';
 import House from '../personalInfo/House';
 import Linkedin from '../personalInfo/Linkedin';

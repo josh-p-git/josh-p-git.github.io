@@ -1,0 +1,38 @@
+.project-container {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  border-radius: 20px;
+  background-color: #052d49;
+}
+
+.gif-container {
+  padding: 20px;
+  border-radius: 25px;
+  border: 5px solid rgb(4, 244, 48);
+}
+.gif {
+  height: 150px;
+  border-radius: 25px;
+  border: 5px solid rgb(4, 244, 236);
+}
+
+.project-text {
+  width: 100%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  font-size: 18px;
+  text-align: justify;
+  justify-content: end;
+  color: #ffffff;
+  border: 5px solid rgb(244, 4, 236);
+}
+
+.git-emoticon {
+  margin-left: 100px;
+}
+
