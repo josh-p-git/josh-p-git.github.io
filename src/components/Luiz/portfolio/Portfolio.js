@@ -4,8 +4,9 @@ import { IconContext } from 'react-icons';
 
 import Git from '../../personalInfo/Git';
 import stepvideo from '../../../images/LuizImagesAndVideos/StepFreeGig.mp4'
+// need to convert this component to be a dinamic component
 
-export default function Portfolio() {
+export default function Portfolio({content, video, link}) {
   return (
     <IconContext.Provider
       value={{ color: 'white', size: '30px'}}>
