@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import logoPensano from '../../images/logo-pensano.png'
 import { useState } from 'react' 
 
+
 export default function Navbar({ handleOurProjects, toggleComponents }) {
 
     const [open, setOpen] = useState(false);
@@ -37,10 +38,15 @@ export default function Navbar({ handleOurProjects, toggleComponents }) {
               <button className='button' onClick={() => setOpen(!open)}>The Team</button>
               {open && DropdownMenu()}
             </div>
+            
             <div className='our-projects'>
+              {/* // <button onClick={() => { */}
+              {/* //     handleOurProjects(true)
+              //     toggleComponents(false)
+              // }}>Our Projects</button> */}
+
               <button onClick={() => {
-                  handleOurProjects(true)
-                  toggleComponents(false)
+                handleClick('/our-projects')
               }}>Our Projects</button>
             </div>
         </div>

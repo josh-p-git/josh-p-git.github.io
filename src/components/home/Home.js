@@ -98,7 +98,7 @@ function Homepage() {
         </div>
         
         <div className='four-diamonds-container'>
-          <div >
+          <div>
             <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
           </div>
 
