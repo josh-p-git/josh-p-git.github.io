@@ -32,7 +32,7 @@ export default function Rachel() {
       <div className='pageContainerRach'>
         <h1 className='name'>Rachel Newby</h1>
           <div className='aboutContainerRach'>
-            <div className='profile-pic'>
+            <div className='profile-picRach'>
               <ProfilePic imageProp={RachelImage}></ProfilePic>
             </div>
             <div>
