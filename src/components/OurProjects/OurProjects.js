@@ -12,13 +12,10 @@ export default function OurProjects() {
     
     <IconContext.Provider
       value={{ color: '#052d49', size: '30px'}}>
+      <div style={{ backgroundColor: '#E5EDEF' }}>
         <Navbar />
         <h2 className='title'>Welcome to our projects page!</h2>
-    
-    {/* <div className='our-projects-page-container'> */}
-      
-      
-    
+
       {/* Project HTMA report */}
       <div className="our-projects-container">
         <div className="gif-container">
@@ -62,13 +59,13 @@ export default function OurProjects() {
                 </p>
               </p>
           </div>
-        <div className="github-emoticon-container">
-          <div className="github-child">
-            <Git git="https://github.com/junocchi/Pensano-Devs/tree/main" />
+          <div className="github-emoticon-container">
+            <div className="github-child">
+              <Git git="https://github.com/junocchi/Pensano-Devs/tree/main" />
           </div>
         </div>
       </div> 
-    {/* </div> */}
+    </div>
   </IconContext.Provider>
   );
 }
