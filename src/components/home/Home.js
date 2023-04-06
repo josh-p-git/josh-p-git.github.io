@@ -56,22 +56,19 @@ function Homepage() {
   return (
   <Layout>
     <div className='page-container'>
-      
       <div className='all-photos-container'>
         
         {showComponents && (
           <div className='team-container-one'>
             <div className='photo-josh-rachel-container'>
               <img className='josh-photo' src={josh} alt='Joshs photo' onClick={() => handleClick('/josh')} />
-              <p onClick={() => handleClick('/josh')}>Josh 
-                
-              </p>
+              <p onClick={() => handleClick('/josh')}>Josh</p>
             </div>
 
-          <div className='photo-josh-rachel-container'>
-            <img className='rachel-photo' src={rachel} alt='Rachels photo' onClick={() => handleClick('/rachel')} />
-            <p onClick={() => handleClick('/rachel')} >Rachel </p>
-          </div>
+            <div className='photo-josh-rachel-container'>
+              <img className='rachel-photo' src={rachel} alt='Rachels photo' onClick={() => handleClick('/rachel')} />
+              <p onClick={() => handleClick('/rachel')} >Rachel</p>
+            </div>
         </div>)}
 
         {showComponents && (
@@ -81,10 +78,10 @@ function Homepage() {
               <p onClick={() => handleClick('/juliana')}>Juliana</p>
             </div>
 
-          <div className='photo-ju-luiz-container'>
-            <img className='luiz-photo' src={luiz} alt='Luizs photo' onClick={() => handleClick('/luiz')} />
-            <p onClick={() => handleClick('/luiz')}>Luiz</p>
-          </div>
+            <div className='photo-ju-luiz-container'>
+              <img className='luiz-photo' src={luiz} alt='Luizs photo' onClick={() => handleClick('/luiz')} />
+              <p onClick={() => handleClick('/luiz')}>Luiz</p>
+            </div>
         </div>)}
       </div>  
         
@@ -96,17 +93,19 @@ function Homepage() {
           <p className='text'> This site is designed to showcase our work both collectively, as Pensano Devs, and our individual projects. Please take a look around.</p>
         </div>
 
-      <div>
-        {showOurProjects && <OurProjects />}
-      </div>
-      
-      <div className='four-diamonds-container'>
-        <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
-      
-        <div className='pink-dots'>
-          <img style={{ width: 800, height: 80 }} src={pinkDots} alt='Decorative line with pink dots'/>
+        <div>
+          {showOurProjects && <OurProjects />}
         </div>
-      </div>
+        
+        <div className='four-diamonds-container'>
+          <div >
+            <img className='four-diamonds' src={fourDiamonds} alt='Four diamonds'/>
+          </div>
+
+          <div className='pink-dots'>
+            <img style={{ width: 800, height: 80 }} src={pinkDots} alt='Decorative line with pink dots'/>
+          </div>
+        </div>
       
       <div className='footer-container'>
         

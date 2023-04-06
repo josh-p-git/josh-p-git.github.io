@@ -121,7 +121,7 @@
   display: flex;
   z-index: -1; */
   position: absolute;
-  top: 45%;
+  top: 42%;
   left: 19%;
   display: flex;
   z-index: -1;
@@ -133,11 +133,9 @@
   margin-top: -11%;
   margin-left: 9%; */
   position: absolute;
-  margin-top: 1%;
-  margin-left: 1%;
 }
 .pink-dots {
-  margin-top: 30%;
+  margin-top: 35%;
   margin-left: -43%;
 }
 
