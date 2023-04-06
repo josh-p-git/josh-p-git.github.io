@@ -3,7 +3,6 @@ import Layout from '../layout/layout'
 import React from 'react';
 import { useState } from 'react';
 import ProfilePic from '../ProfilePic/ProfilePic'
-import Portfolio from './Portfolio';
 import Email from '../personalInfo/Email';
 import House from '../personalInfo/House';
 import Linkedin from '../personalInfo/Linkedin';
@@ -12,6 +11,7 @@ import Git from '../personalInfo/Git';
 import CV from '../CV/CV';
 import RachelNewbyCV from '../../images/RachelAssets/RachelNewbyCV.pdf'
 import RachelImage from '../../images/Rachel.svg'
+import Portfolio from '../Juliana/portfolio/Portfolio';
 
 export default function Rachel() {
   const [showPortfolio, setShowPortfolio] = useState(false);
