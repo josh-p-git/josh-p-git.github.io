@@ -4,7 +4,7 @@ import Navbar from '../Navbar/Navbar';
 import { IconContext } from 'react-icons';
 
 import Git from '../personalInfo/Git';
-import imgPensanoDevs from '../../images/OurProjectsImagesAndVideos/Pensano-Devs.png'
+import imgPensanoDevs from '../../images/OurProjectsImagesAndVideos/Pensano-Devs.gif'
 import imgHTMA from '../../images/OurProjectsImagesAndVideos/HTMA-report.png'
 
 export default function OurProjects() {
