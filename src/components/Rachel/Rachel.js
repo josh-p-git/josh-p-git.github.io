@@ -38,10 +38,14 @@ export default function Rachel() {
             <div>
               <p className='aboutTextRach'>
               👩🏻‍💻 Hi, I'm Rachel. <br></br>
+              <br></br>
               I love creative problem solving, making things, learning new skills, and methodical and logical processes. That's why I decided to become a software engineer.<br></br>
+              <br></br>
               I'm really passionate about technology and how it has the power to transform the most everyday tasks, and how it can be used to make the world a more accessible place. <br></br>
+              <br></br>
               When I'm not coding, you can find me playing a tenor bass in my steel drum band, trying to get out of an escape room, in the gym, or walking my miniature dachshund, Dotty. <br></br>
-              Take a look at my CV and portfolio below to see what I've been up to!<br></br>
+              <br></br>
+              Take a look at my CV and portfolio below to see what I've been up to! You can find my full portfolio of work on GitHub.<br></br>
               <br></br>
               <p style={{ fontSize: 14 }}>
               ⚙️ Tech Skills: JavaScript, React, NextJS, NodeJS, ExpressJS, 
