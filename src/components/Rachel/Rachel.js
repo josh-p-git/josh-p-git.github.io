@@ -9,9 +9,9 @@ import Linkedin from '../personalInfo/Linkedin';
 import Phone from '../personalInfo/Phone';
 import Git from '../personalInfo/Git';
 import CV from '../CV/CV';
-import RachelNewbyCV from '../../images/RachelAssets/RachelNewbyCV.pdf'
+import RachelNewbyCV from '../../images/RachelImagesAndVideos/RachelNewbyCV.pdf'
 import RachelImage from '../../images/Rachel.svg'
-import Portfolio from '../Juliana/portfolio/Portfolio';
+import Portfolio from '../Rachel/Portfolio/Portfolio';
 
 export default function Rachel() {
   const [showPortfolio, setShowPortfolio] = useState(false);
