@@ -20,7 +20,7 @@ export default function Portfolio() {
           <img className="gif" src={gifSolved} />
         </div>
 
-        <div className="project-text">
+        <div className="project-textJu">
           <h3>Solved</h3>
           <p>This mobile app consists of a live-action treasure hunting with clues 
             to help the user to search for five secret London landmarks. As part of a
@@ -46,7 +46,7 @@ export default function Portfolio() {
         <div className="gif-container">
           <img className="gif" src={AcebookAir} />
         </div>
-        <div className="project-text">
+        <div className="project-textJu">
         <h3>Acebook Air</h3>
           <p>In this project, eight of us were tasked with working on an existing MERN 
             application with only the most basic signup, login and logout functions in place 
@@ -72,7 +72,7 @@ export default function Portfolio() {
         <div className="gif-container">
           <img className="gif" src={CloudBnB} />
         </div>
-          <div className="project-text">
+          <div className="project-textJu">
           <h3>Cloud BnB</h3>
             <p>As an Airbnb clone, the six of us develop Cloud BnB is a week.
               Users can register, login, list their properties for rent, browse the listed properties, view the availability 
@@ -95,7 +95,7 @@ export default function Portfolio() {
         <div className="gif-container">
           <img className="gif" src={Bowling} />
         </div>
-          <div className="project-text">
+          <div className="project-textJu">
           <h3>Bowling Scorecard</h3>
             <p>This individual challenge consists of a Bowling Scorecard program that counts and sums the scores of a bowling 
               game, including strikes and spares.
@@ -117,7 +117,7 @@ export default function Portfolio() {
         <div className="gif-container">
           <img className="gif" src={bank} />
         </div>
-          <div className="project-text">
+          <div className="project-textJu">
           <h3>Bank Account</h3>
             <p>This bank account program accepts deposits, withdraws and prints 
               statements including the transactions date, type, amount and balance.

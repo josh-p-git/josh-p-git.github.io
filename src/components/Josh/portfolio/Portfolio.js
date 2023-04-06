@@ -16,7 +16,7 @@ export default function Portfolio() {
           <img className="gif" src={construction} />
         </div>
 
-        <div className="project-text">
+        <div className="project-textJosh">
           <h3>Pensano Devs</h3>
           <p>This site is designed to showcase our work both collectively, as Pensano 
             Devs, and our individual projects.
