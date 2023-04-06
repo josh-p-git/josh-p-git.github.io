@@ -27,13 +27,15 @@ background-color: #68afa3;
 .aboutTextRach {
 font-family: Arial, Helvetica, sans-serif;
 padding: 20px;
+line-height: 1.5;
 font-size: 16px;
 text-align: justify;
 margin-right: 20px;
+margin-left: -140px;
 color: #052d49;
 }
 
-.profile-pic {
+.profile-picRach {
 height: 80%;
 position: relative; 
 /* overflow: hidden; */
@@ -42,17 +44,16 @@ padding-top: 30px;
 padding-bottom: 30px;
 }
 
-.profile-pic img {
-width: 100%;
-height: 100%;
+.profile-picRach img {
+width: 70%;
+height: 70%;
 /* resize: 'contain'; */
-position: 'absolute';
 }
 
-.about p {
+/* .about p {
 flex: 1;
-margin-right: 20px;
-}
+margin-right: 50px;
+} */
 
 .info-containerRach {
 margin-top: -3%;
