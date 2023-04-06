@@ -9,7 +9,7 @@ import Linkedin from '../personalInfo/Linkedin';
 import Phone from '../personalInfo/Phone';
 import Git from '../personalInfo/Git';
 import CV from '../CV/CV';
-import RachelNewbyCV from '../../images/RachelAssets/RachelNewbyCV.pdf'
+import RachelNewbyCV from '../../images/LuizCV.pdf'
 import RachelImage from '../../images/Rachel.svg'
 import Portfolio from '../Juliana/portfolio/Portfolio';
 

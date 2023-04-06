@@ -24,8 +24,7 @@
 
 .project-text {
   width: 100%;
-  line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
+
   padding-top: 20px;
   padding-right: 20px;
   font-size: 18px;
@@ -34,6 +33,18 @@
   color: #ffffff;
   margin-right: 20px;
   
+}
+
+.project-text p {
+color: #ffffff;
+line-height: 1.5;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-text h3 {
+  color: #ffffff;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .git-emoticon-container {
