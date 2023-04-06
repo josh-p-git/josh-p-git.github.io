@@ -39,10 +39,15 @@ export default function Juliana() {
             
             <div>
               <p className='aboutTextJu'>
-              👩🏻‍💻 I am a Makers graduate Software Engineer with a background in Animation and HR. 
-              I am a positive, methodical and highly organised person who values continuous learning. I am also 
-              passionate about building strong relationships and believe that collaboration, communication, 
-              and respect are essential for any successful project.
+              👩🏻‍💻 As a Software Engineer with a background in Animation and HR, I bring a 
+              unique perspective to my work. I'm a positive, methodical, and highly organized 
+              person who values continuous learning. <br></br>
+              I'm passionate about building strong relationships with my colleagues and believe 
+              that collaboration, communication, and respect are essential for any successful project. <br></br>
+              In my free time, I enjoy exploring all that London has to offer, trying out new watercolor 
+              painting techniques, and playing volleyball. I'm always looking for ways to improve my 
+              skills both in and out of the office, and I'm excited to see where my passion 
+              for technology will take me next.
               <br></br>
                 <p style={{ fontSize: 14 }}>
                 ⚙️ Tech Skills: C#, HTML, CSS, Ruby, JavaScript, React, React Native, NodeJS, ExpressJS, Expo Go, 
