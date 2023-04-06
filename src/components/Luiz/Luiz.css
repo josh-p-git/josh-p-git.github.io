@@ -96,6 +96,8 @@
     font-size: 12px;
   }
 
-  .git-emoticon {
-    
+  .portfolios-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
