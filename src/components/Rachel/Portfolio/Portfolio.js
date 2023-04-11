@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons';
 
 import Git from '../../personalInfo/Git';
 
-import CloudBnB from '../../../images/JulianaImagesAndVideos/CloudBnB.svg'
+import CloudBnB from '../../../images/JuImagesAndVideos/CloudBnB.svg'
 
 export default function Portfolio() {
   return (
