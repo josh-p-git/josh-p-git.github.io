@@ -19,7 +19,7 @@ export default function OurProjects() {
       {/* Project HTMA report */}
       <div className="our-projects-container">
         <div className="gif-container">
-          <img className="gif" src={imgHTMA} />
+          <img className="gif" src={imgHTMA} alt="HTMA result"/>
         </div>
           <div className="project-textAll">
             <h3>HTMA Report Generator</h3>
@@ -46,7 +46,7 @@ export default function OurProjects() {
       {/* Project Pensano */}
       <div className="our-projects-container">
         <div className="gif-container">
-          <img className="gif" src={imgPensanoDevs} />
+          <img className="gif" src={imgPensanoDevs} alt="Gif showing Pensano website"/>
         </div>
           <div className="project-textAll">
             <h3>Pensano Devs Website</h3>
