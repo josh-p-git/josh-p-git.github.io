@@ -34,7 +34,7 @@ export default function Juliana() {
         <h1 className='name'>Juliana Nocchi</h1>
           <div className='aboutContainerJu'>
             <div className='profile-pic'>
-              <ProfilePic imageProp={Ju} />
+              <ProfilePic imageProp={Ju} alt="Juliana's photo"/>
             </div>
             
             <div>

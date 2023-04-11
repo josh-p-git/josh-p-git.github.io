@@ -17,7 +17,7 @@ export default function Portfolio() {
 {/* Project Solved */}
       <div className="all-projects-containerJu">
         <div className="gif-container">
-          <img className="gif" src={gifSolved} />
+          <img className="gif" src={gifSolved} alt="gif of the app Solved"/>
         </div>
 
         <div className="project-textJu">
@@ -44,7 +44,7 @@ export default function Portfolio() {
 {/* Project Acebook */}
       <div className="all-projects-containerJu">
         <div className="gif-container">
-          <img className="gif" src={AcebookAir} />
+          <img className="gif" src={AcebookAir} alt="gif of the Acebook-Air website"/>
         </div>
         <div className="project-textJu">
         <h3>Acebook Air</h3>
@@ -53,7 +53,7 @@ export default function Portfolio() {
             and minimal other functionality. The challenge was to familiarise ourselves with an 
             unknown codebase with technologies we'd little to no previous experience in. We had 
             to improve and extend it into a fully functioning app that we could present to the stakeholders.
-            You can view the fully deployed site here: Acebook-Air
+            You can view the fully deployed site at <a href='https://acebook-air-frontend.onrender.com/' target='_blank'>Acebook-Air</a>
             <br></br>
             <p style={{ fontSize: 14 }}> 
             ⚙️ Tech used: MERN - MongoDB, Express, React and Node
@@ -70,7 +70,7 @@ export default function Portfolio() {
 {/* Project Makers BnB */}
       <div className="all-projects-containerJu">
         <div className="gif-container">
-          <img className="gif" src={CloudBnB} />
+          <img className="gif" src={CloudBnB} alt="image of the CloudBnB homepage"/>
         </div>
           <div className="project-textJu">
           <h3>Cloud BnB</h3>
@@ -93,7 +93,7 @@ export default function Portfolio() {
 {/* Project Bowling Scorecard Program */}
 <div className="all-projects-containerJu">
         <div className="gif-container">
-          <img className="gif" src={Bowling} />
+          <img className="gif" src={Bowling} alt="image of a bowling points system"/>
         </div>
           <div className="project-textJu">
           <h3>Bowling Scorecard</h3>
@@ -115,7 +115,7 @@ export default function Portfolio() {
 {/* Project Bank Account Program */}
 <div className="all-projects-containerJu">
         <div className="gif-container">
-          <img className="gif" src={bank} />
+          <img className="gif" src={bank} alt="image of a bank statement"/>
         </div>
           <div className="project-textJu">
           <h3>Bank Account</h3>
