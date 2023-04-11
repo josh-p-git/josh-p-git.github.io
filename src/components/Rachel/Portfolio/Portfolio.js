@@ -4,11 +4,7 @@ import { IconContext } from 'react-icons';
 
 import Git from '../../personalInfo/Git';
 
-import gifSolved from '../../../images/JuImagesAndVideos/gif-Solved.gif'
-import Bowling from '../../../images/JuImagesAndVideos/bowling.png'
-import bank from '../../../images/JuImagesAndVideos/bank.png'
-import CloudBnB from '../../../images/JuImagesAndVideos/CloudBnB.png'
-import AcebookAir from '../../../images/JuImagesAndVideos/gif-AcebookAir.gif'
+import CloudBnB from '../../../images/JulianaImagesAndVideos/CloudBnB.svg'
 
 export default function Portfolio() {
   return (
@@ -17,8 +13,8 @@ export default function Portfolio() {
   
 {/* Project Makers BnB */}
       <div className="all-projects-containerRach">
-        <div className="gif-container">
-          <img className="gif" src={CloudBnB} />
+        <div className="gif-containerRach">
+          <img className="gifRach" src={CloudBnB} />
         </div>
           <div className="project-text">
           <h3>Cloud BnB</h3>

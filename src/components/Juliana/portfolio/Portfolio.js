@@ -3,11 +3,11 @@ import './Portfolio.css'
 import { IconContext } from 'react-icons';
 
 import Git from '../../personalInfo/Git';
-import gifSolved from '../../../images/JuImagesAndVideos/gif-Solved.gif'
-import Bowling from '../../../images/JuImagesAndVideos/bowling.png'
-import bank from '../../../images/JuImagesAndVideos/bank.png'
-import CloudBnB from '../../../images/JuImagesAndVideos/CloudBnB.png'
-import AcebookAir from '../../../images/JuImagesAndVideos/gif-AcebookAir.gif'
+import gifSolved from '../../../images/JuImagesAndVideos/Solved.svg'
+import Bowling from '../../../images/JuImagesAndVideos/bowling.svg'
+import bank from '../../../images/JuImagesAndVideos/bank.svg'
+import CloudBnB from '../../../images/JuImagesAndVideos/CloudBnB.svg'
+import AcebookAir from '../../../images/JuImagesAndVideos/Acebook-Air.svg'
 
 export default function Portfolio() {
   return (
@@ -16,8 +16,8 @@ export default function Portfolio() {
       
 {/* Project Solved */}
       <div className="all-projects-containerJu">
-        <div className="gif-container">
-          <img className="gif" src={gifSolved} alt="gif of the app Solved"/>
+        <div className="gif-containerJu">
+          <img className="gifJu" src={gifSolved} alt="gif of the app Solved"/>
         </div>
 
         <div className="project-textJu">
@@ -43,8 +43,8 @@ export default function Portfolio() {
 
 {/* Project Acebook */}
       <div className="all-projects-containerJu">
-        <div className="gif-container">
-          <img className="gif" src={AcebookAir} alt="gif of the Acebook-Air website"/>
+        <div className="gif-containerJu">
+          <img className="gifJu" src={AcebookAir} alt="gif of the Acebook-Air website"/>
         </div>
         <div className="project-textJu">
         <h3>Acebook Air</h3>
@@ -67,10 +67,10 @@ export default function Portfolio() {
         </div>
       </div>
 
-{/* Project Makers BnB */}
+{/* Project Cloud BnB */}
       <div className="all-projects-containerJu">
-        <div className="gif-container">
-          <img className="gif" src={CloudBnB} alt="image of the CloudBnB homepage"/>
+        <div className="gif-containerJu">
+          <img className="gifJu" src={CloudBnB} alt="image of the CloudBnB homepage"/>
         </div>
           <div className="project-textJu">
           <h3>Cloud BnB</h3>
@@ -92,8 +92,8 @@ export default function Portfolio() {
 
 {/* Project Bowling Scorecard Program */}
 <div className="all-projects-containerJu">
-        <div className="gif-container">
-          <img className="gif" src={Bowling} alt="image of a bowling points system"/>
+        <div className="gif-containerJu">
+          <img className="gifJu" src={Bowling} alt="image of a bowling points system"/>
         </div>
           <div className="project-textJu">
           <h3>Bowling Scorecard</h3>
@@ -114,8 +114,8 @@ export default function Portfolio() {
 
 {/* Project Bank Account Program */}
 <div className="all-projects-containerJu">
-        <div className="gif-container">
-          <img className="gif" src={bank} alt="image of a bank statement"/>
+        <div className="gif-containerJu">
+          <img className="gifJu" src={bank} alt="image of a bank statement"/>
         </div>
           <div className="project-textJu">
           <h3>Bank Account</h3>
