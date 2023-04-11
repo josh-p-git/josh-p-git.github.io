@@ -4,6 +4,8 @@ import { IconContext } from 'react-icons';
 
 import Git from '../../personalInfo/Git';
 import stepvideo from '../../../images/LuizImagesAndVideos/StepFreeGig.gif'
+import acevideo from '../../../images/LuizImagesAndVideos/gif-acebook-fire2.gif'
+import makerspic from '../../../images/LuizImagesAndVideos/makersbnb.png'
 // need to convert this component to be a dinamic component
 
 export default function Portfolio({content, video, link}) {
@@ -29,7 +31,7 @@ export default function Portfolio({content, video, link}) {
 
       <div className="project-container">
         <div className="gif-container">
-          <img className="gif" src={stepvideo} />
+          <img className="gif" src={acevideo} />
         </div>
 
         <div className="project-text">
@@ -50,7 +52,7 @@ export default function Portfolio({content, video, link}) {
 
       <div className="project-container">
         <div className="gif-container">
-          <img className="gif" src={stepvideo} />
+          <img className="gif" src={makerspic} />
         </div>
           <div className="project-text">
           <h3>Makers-BnB</h3>
