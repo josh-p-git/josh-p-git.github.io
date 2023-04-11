@@ -22,17 +22,16 @@ export default function OurProjects() {
           <img className="gif" src={imgHTMA} alt="HTMA result"/>
         </div>
           <div className="project-textAll">
-            <h3>HTMA Report Generator</h3>
-              <p>This online, login-free, program is being developed to support nutritional therapists in 
-                analysing Hair Tissue Mineral Analysis results. The practitioner adds the 
-                test results and the program generates a comprehensive report that can 
-                downloaded. This will have a positive impact on the practitioner's daily 
-                schedule, leaving them more time to focus on providing personalised 
-                recommendations for the patient, such as specific dietary changes, nutrient 
-                supplements, and lifestyle modifications. 
+            <h3>HTMA Report Generator (🚧 under construction)</h3>
+              <p>This online, login-free, program is being developed to support Nutritional Therapy practitioners 
+                from the charity Jade's Soul and students from <a href='https://www.newschoolofnutrition.com/' target="_blank">The New School of Nutritional Medicine</a>
+                analysing Hair Tissue Mineral Analysis results. After adding the 
+                test results, the program generates a comprehensive report that can be 
+                downloaded; leaving more time to the practitioners to focus on providing personalised 
+                recommendations for their patients. 
                 <br></br>
                   <p style={{ fontSize: 14 }}> 
-                  ⚙️ Tech used: Ruby on Rails, HTML, CSS,Git, JavaScript, SQL and RSpec. 
+                  ⚙️ Tech used: Ruby on Rails, HTML, CSS, Git, GitHub, JavaScript, SQL and RSpec. 
                   </p>
                 </p>
           </div>
@@ -49,13 +48,13 @@ export default function OurProjects() {
           <img className="gif" src={imgPensanoDevs} alt="Gif showing Pensano website"/>
         </div>
           <div className="project-textAll">
-            <h3>Pensano Devs Website</h3>
+            <h3>Pensano Devs Website (🚧 under construction) </h3>
               <p>Our very first project working as Pensano Devs was to developed this website to
               showcase our work both collectively, as Pensano Devs, and our individual projects.
-
+              We are aiming for mobile responsiveness and +85% testing coverage.
                 <br></br>
                   <p style={{ fontSize: 14 }}> 
-                  ⚙️ Tech used: JavaScript, React, Jest, CSS and HTML.  
+                  ⚙️ Tech used: Git, GitHub, JavaScript, React, Cypress, CSS and HTML.  
                 </p>
               </p>
           </div>

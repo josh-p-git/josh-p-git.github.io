@@ -53,7 +53,7 @@ export default function Portfolio() {
             and minimal other functionality. The challenge was to familiarise ourselves with an 
             unknown codebase with technologies we'd little to no previous experience in. We had 
             to improve and extend it into a fully functioning app that we could present to the stakeholders.
-            You can view the fully deployed site here: Acebook-Air
+            You can view the fully deployed site at <a href='https://acebook-air-frontend.onrender.com/' target='_blank'>Acebook-Air</a>
             <br></br>
             <p style={{ fontSize: 14 }}> 
             ⚙️ Tech used: MERN - MongoDB, Express, React and Node
