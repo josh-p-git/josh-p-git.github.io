@@ -17,14 +17,14 @@ function App() {
 
   
 return (
-<HashRouter>
+<Routes>
   <Route path="/" element={<Home />} />
   <Route path="/luiz" element={<Luiz />} />
   <Route path="/josh" element={<Josh />} />
   <Route path="/juliana" element={<Juliana />} />
   <Route path="/rachel" element={<Rachel />} />
   <Route path="/our-projects" element={<OurProjects />} />
-</HashRouter>
+</Routes>
 
 )};
 
