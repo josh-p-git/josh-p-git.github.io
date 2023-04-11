@@ -24,8 +24,8 @@ export default function OurProjects() {
           <div className="project-textAll">
             <h3>HTMA Report Generator (🚧 under construction)</h3>
               <p>This online, login-free, program is being developed to support Nutritional Therapy practitioners 
-                from the charity Jade's Soul and students from <a href='https://www.newschoolofnutrition.com/' target="_blank">The New School of Nutritional Medicine</a>
-                analysing Hair Tissue Mineral Analysis results. After adding the 
+                from the charity Jade's Soul and students from <a href='https://www.newschoolofnutrition.com/' target="_blank">The New School of Nutritional Medicine</a> analysing
+                Hair Tissue Mineral Analysis results. After adding the 
                 test results, the program generates a comprehensive report that can be 
                 downloaded; leaving more time to the practitioners to focus on providing personalised 
                 recommendations for their patients. 
