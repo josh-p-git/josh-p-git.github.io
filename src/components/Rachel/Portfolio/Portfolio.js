@@ -29,7 +29,7 @@ export default function Portfolio() {
           </div>
           <div className="github-emoticon-container">
             <div className="github-child">
-              <Git  git="https://github.com/junocchi/Cloud-BnB" />
+              <Git  git="https://github.com/rachelnewby/makers-bnb" />
             </div>
         </div>
       </div>
